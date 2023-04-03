@@ -1,0 +1,145 @@
+.documents {
+    position: relative;
+    padding: 110px 0 90px 0;
+
+    @include media-md {
+        padding: 60px 0;
+    }
+
+    &__wrap{
+        position: relative;
+        display: flex;
+
+        @include media-md{
+            flex-direction: column;
+        }
+    }
+
+    &__info{
+        width: 100%;
+        max-width: 340px;
+        padding-top: 50px;
+
+        @include media-md{
+            max-width: none;
+            padding: 60px 0;
+        }
+    }
+
+    &__info-list{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+        @include media-md{
+            flex-direction: row;
+            margin: 0 -20px;
+        }
+
+        @include media-sm{
+            flex-direction: column;
+        }
+
+        li{
+            margin-top: 50px;
+
+            @include media-md{
+                width: 50%;
+                padding: 0 20px;
+            }
+
+            @include media-sm{
+                width: 100%;
+            }
+        }
+
+        img{
+            max-width: 90px;
+        }
+
+        h5{
+            margin-top: 20px;
+        }
+    }
+
+    &__links{
+        position: relative;
+        width: 100%;
+        max-width: 800px;
+        padding: 100px 15px 0 100px;
+        margin-left: auto;
+        background-color: $card-bg;
+
+        @include media-mdx{
+            padding: 60px 15px 60px 30px;
+        }
+
+        @include media-md{
+            padding: 60px 15px;
+        }
+
+        &:after{
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 50vw;
+            right: -50vw;
+            height: 100%;
+            background-color: $card-bg;
+
+            @include media-md{
+                display: none;
+            }
+        }
+    }
+
+    &__links-list{
+        position: relative;
+        display: flex;
+        margin: 0 -20px;
+        margin-bottom: -30px;
+
+        @include media-mdx{
+            margin-bottom: 0;
+        }
+
+        @include media-sm{
+            flex-direction: column;
+        }
+
+        li{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            padding: 0 20px;
+
+            @include media-sm{
+                width: 100%;
+
+                & + li{
+                    margin-top: 60px;
+                }
+            }
+        }
+
+        i{
+            display: flex;
+            box-shadow: $shadow;
+        }
+
+        img{
+            width: 100%;
+        }
+
+        .btn{
+            width: 100%;
+            padding: 0 15px;
+            margin-top: 60px;
+            box-shadow: $shadow;
+
+            @include media-sm{
+                margin-top: 30px;
+            }
+        }
+    }
+}

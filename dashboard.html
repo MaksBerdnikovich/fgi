@@ -1,0 +1,1445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FGI</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="dist/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="dist/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="dist/images/favicon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta property="og:title" content="FGI">
+    <meta property="og:site_name" content="FGI">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+
+    <link rel="stylesheet" href="dist/css/style.min.css">
+    <link rel="stylesheet" href="dist/css/style.css">
+</head>
+<body class="dashboard">
+
+<header class="header">
+    <div class="header__area">
+        <div class="header__area-wrap">
+            <div class="header__area-start">
+                <div class="header__support">
+                    <a href="tel:1234567890">
+                        <i class="icon-support"></i> <span>Support</span>
+                    </a>
+                </div>
+                <div class="header__lang">
+                    <a href="javascript:void(0)" class="header__lang-curr" data-dropdown-toggle>
+                        <i class="icon-globe"></i> <b>En</b>
+                    </a>
+                    <ul class="header__lang-list" data-dropdown>
+                        <li><a class="header__lang-item" href="#">De</a></li>
+                        <li><a class="header__lang-item" href="#">It</a></li>
+                        <li><a class="header__lang-item" href="#">Ch</a></li>
+                        <li><a class="header__lang-item" href="#">Ru</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header__area-center">
+                <div class="bonus-shield">
+                    <a class="bonus-shield__wrap" href="#">
+                        <div class="bonus-shield__icon"><i class="icon-te"></i></div>
+                        <div class="bonus-shield__bonus"><p>Bonus <b>10$</b></p></div>
+                        <div class="bonus-shield__title"><p>For registration<br/> in Telegram</p></div>
+                    </a>
+                </div>
+            </div>
+            <div class="header__area-end">
+                <div class="header__email">
+                    <a href="mailto:contact@fglobali.io">
+                        <i class="icon-mail"></i> <span>contact@fglobali.io</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__data">
+        <div class="header__logo">
+            <a href="index.html" class="header__logo-item">
+                <img src="dist/images/db/logo.png" alt="logo">
+            </a>
+
+            <div class="header__toggle" data-menu-toggle></div>
+        </div>
+        <div class="header__stats">
+            <div class="container">
+                <ul class="header__stats-list">
+                    <li>
+                        <i><img src="dist/images/icons/username-2.svg" alt="username"></i>
+                        <p>
+                            <b>Welcome:</b>
+                            <span class="styled-subtitle light tx-primary">ivanovsky234</span>
+                        </p>
+                    </li>
+                    <li>
+                        <i><img src="dist/images/icons/calendar.svg" alt="calendar"></i>
+                        <p>
+                            <b>Registration date:</b>
+                            <span class="styled-subtitle light">23.07.2022  20:45</span>
+                        </p>
+                    </li>
+                    <li>
+                        <i><img src="dist/images/icons/calendar.svg" alt="calendar"></i>
+                        <p>
+                            <b>Last entrance:</b>
+                            <span class="styled-subtitle light">23.07.2022  20:45</span>
+                        </p>
+                    </li>
+                    <li>
+                        <i><img src="dist/images/icons/server.svg" alt="server"></i>
+                        <p>
+                            <b>Last entry from IP:</b>
+                            <span class="styled-subtitle light">200.150.332.100</span>
+                        </p>
+                    </li>
+                    <li class="stats-list--ref">
+                        <i><img src="dist/images/icons/link.svg" alt="link"></i>
+                        <p>
+                            <b>Your referral link: <span data-clipboard-confirm>Copy</span></b>
+                            <a href="javascript:void(0)" data-clipboard data-clipboard-text="https://fglobali.io/referral/35896y90858985898">
+                                <span>https://fglobali.io/referral/35896y90858985898</span>
+                            </a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header__balance">
+            <b>Your Balance:</b>
+            <span>$12784.59</span>
+        </div>
+    </div>
+</header>
+
+<main class="main-content">
+
+    <nav class="navigation" data-menu-nav>
+        <ul class="navigation__menu">
+            <li>
+                <a href="dashboard.html" class="navigation__menu-item active">
+                    <i><img src="dist/images/icons/admin-panel.svg" alt="Dashboard"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="operations.html" class="navigation__menu-item">
+                    <i><img src="dist/images/icons/calendar-2.svg" alt="Operations"></i>
+                    <span>Operations</span>
+                </a>
+            </li>
+            <li>
+                <a href="security.html" class="navigation__menu-item">
+                    <i><img src="dist/images/icons/protection.svg" alt="Security"></i>
+                    <span>Security</span>
+                </a>
+            </li>
+            <li>
+                <a href="referral.html" class="navigation__menu-item">
+                    <i><img src="dist/images/icons/connection.svg" alt="Referral Program"></i>
+                    <span>Referral Program</span>
+                </a>
+            </li>
+            <li>
+                <a href="deposit.html" class="navigation__menu-item">
+                    <i><img src="dist/images/icons/safety-money.svg" alt="Open Deposit"></i>
+                    <span>Open Deposit</span>
+                </a>
+            </li>
+            <li>
+                <a href="withdrawals.html" class="navigation__menu-item">
+                    <i><img src="dist/images/icons/refund.svg" alt="Withdrawals"></i>
+                    <span>Withdrawals</span>
+                </a>
+            </li>
+            <li>
+                <a href="currency-exchange.html" class="navigation__menu-item">
+                    <i><img src="dist/images/icons/buy-cryptocurrency.svg" alt="Сurrency Exchange"></i>
+                    <span>Сurrency Exchange</span>
+                </a>
+            </li>
+            <li>
+                <a href="information.html" class="navigation__menu-item">
+                    <i><img src="dist/images/icons/authentication.svg" alt="Personal Information"></i>
+                    <span>Personal Information</span>
+                </a>
+            </li>
+            <li>
+                <a href="index.html" class="navigation__menu-item">
+                    <i><img src="dist/images/icons/exit.svg" alt="Exit"></i>
+                    <span>Exit</span>
+                </a>
+            </li>
+            <li class="menu-item--copy">
+                <p>Copyright © 2022 <a href="#">Food Global Investment</a> All Righr Reserved</p>
+            </li>
+            <li class="menu-item--lang">
+                <div class="header__lang">
+                    <a href="javascript:void(0)" class="header__lang-curr" data-dropdown-toggle>
+                        <i class="icon-globe"></i> <b>English</b>
+                    </a>
+                    <ul class="header__lang-list" data-dropdown>
+                        <li><a class="header__lang-item" href="#">Germany</a></li>
+                        <li><a class="header__lang-item" href="#">Italy</a></li>
+                        <li><a class="header__lang-item" href="#">China</a></li>
+                        <li><a class="header__lang-item" href="#">Russian</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="menu-item--socials">
+                <div class="navigation__socials">
+                    <ul>
+                        <li><a href="#" class="header__socials-item"><i class="icon-vk"></i></a></li>
+                        <li><a href="#" class="header__socials-item"><i class="icon-yt"></i></a></li>
+                        <li><a href="#" class="header__socials-item"><i class="icon-te"></i></a></li>
+                        <li><a href="#" class="header__socials-item"><i class="icon-ins"></i></a></li>
+                        <li><a href="#" class="header__socials-item"><i class="icon-fb"></i></a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="wrapper">
+        <div class="statistics mb-60">
+            <div class="container">
+                <div class="page-title"><h3>Dashboard</h3></div>
+
+                <table class="statistics__table">
+                    <thead>
+                    <tr>
+                        <th class="stat--deposit">Deposit</th>
+                        <th class="stat--deposit-open">Open deposit</th>
+                        <th class="stat--payment">Deposit amount</th>
+                        <th class="stat--profit">Profit per day</th>
+                        <th class="stat--profit">Total profit</th>
+                        <th class="stat--accruals">Total accruals</th>
+                        <th class="stat--timer">Following accrual through</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="stat--deposit">
+                            <div class="statistics__td-title">Deposit</div>
+                            <div class="statistics__deposit">
+                                <i><img src="dist/images/icons/corn.svg" alt="corn"></i>
+                                <p>
+                                    <b class="title-h5 tx-dark">Corn</b>
+                                    <span class="tx-primary">1.22% per day</span>
+                                </p>
+                            </div>
+                        </td>
+                        <td class="stat--deposit-open">
+                            <div class="statistics__td-title">Open deposit</div>
+                            <div class="statistics__deposit-open">
+                                <span>20.08.2022</span> <span>14:45</span>
+                            </div>
+                        </td>
+                        <td class="stat--payment">
+                            <div class="statistics__td-title">Deposit amount</div>
+                            <div class="statistics__payment">
+                                <b class="title-h4 light tx-primary">$500.00</b>
+                                <p>
+                                    <span class="tx-dark">Payment system:</span>
+                                    <i><img src="dist/images/pays/btc.png" alt="btc"></i>
+                                </p>
+                            </div>
+                        </td>
+                        <td class="stat--profit">
+                            <div class="statistics__td-title">Profit per day</div>
+                            <div class="statistics__profit">
+                                <span class="title-h4 light tx-dark">$97.00</span>
+                            </div>
+                        </td>
+                        <td class="stat--profit">
+                            <div class="statistics__td-title">Total profit</div>
+                            <div class="statistics__profit">
+                                <span class="title-h4 light tx-dark">$2340.00</span>
+                            </div>
+                        </td>
+                        <td class="stat--accruals">
+                            <div class="statistics__td-title">Total accruals</div>
+                            <div class="progressbar">
+                                <div class="progressbar__range">20 from 35</div>
+                                <div class="progressbar__line">
+                                    <div class="progressbar__line-active" style="width: 83%"></div>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="stat--timer">
+                            <div class="statistics__td-title">Following accrual through</div>
+                            <div class="countdown">
+                                <ul class="timer title-h3 light tx-primary" data-start="2019-03-13T11:55:30" data-now="2019-03-23T11:55:50" data-end="2019-03-25T11:56:00">
+                                    <li class="time hous">00</li>
+                                    <li class="sep">:</li>
+                                    <li class="time min">00</li>
+                                    <li class="sep">:</li>
+                                    <li class="time sec">00</li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="stat--deposit">
+                            <div class="statistics__td-title">Deposit</div>
+                            <div class="statistics__deposit">
+                                <i><img src="dist/images/icons/we.svg" alt="Wheat"></i>
+                                <p>
+                                    <b class="title-h5 tx-dark">Wheat</b>
+                                    <span class="tx-primary">1.22% per day</span>
+                                </p>
+                            </div>
+                        </td>
+                        <td class="stat--deposit-open">
+                            <div class="statistics__td-title">Open deposit</div>
+                            <div class="statistics__deposit-open">
+                                <span>20.08.2022</span> <span>14:45</span>
+                            </div>
+                        </td>
+                        <td class="stat--payment">
+                            <div class="statistics__td-title">Deposit amount</div>
+                            <div class="statistics__payment">
+                                <b class="title-h4 light tx-primary">$500.00</b>
+                                <p>
+                                    <span class="tx-dark">Payment system:</span>
+                                    <i><img src="dist/images/pays/bnb.png" alt="bnb"></i>
+                                </p>
+                            </div>
+                        </td>
+                        <td class="stat--profit">
+                            <div class="statistics__td-title">Profit per day</div>
+                            <div class="statistics__profit">
+                                <span class="title-h4 light tx-dark">$97.00</span>
+                            </div>
+                        </td>
+                        <td class="stat--profit">
+                            <div class="statistics__td-title">Total profit</div>
+                            <div class="statistics__profit">
+                                <span class="title-h4 light tx-dark">$2340.00</span>
+                            </div>
+                        </td>
+                        <td class="stat--accruals">
+                            <div class="statistics__td-title">Total accruals</div>
+                            <div class="progressbar">
+                                <div class="progressbar__range">15 from 35</div>
+                                <div class="progressbar__line">
+                                    <div class="progressbar__line-active" style="width: 65%"></div>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="stat--timer">
+                            <div class="statistics__td-title">Following accrual through</div>
+                            <div class="countdown">
+                                <ul class="timer title-h3 light tx-primary" data-start="2019-03-13T11:55:30" data-now="2019-03-23T11:55:50" data-end="2019-03-25T11:56:00">
+                                    <li class="time hous">00</li>
+                                    <li class="sep">:</li>
+                                    <li class="time min">00</li>
+                                    <li class="sep">:</li>
+                                    <li class="time sec">00</li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="stat--deposit">
+                            <div class="statistics__td-title">Deposit</div>
+                            <div class="statistics__deposit">
+                                <i><img src="dist/images/icons/rice.svg" alt="Rice"></i>
+                                <p>
+                                    <b class="title-h5 tx-dark">Rice</b>
+                                    <span class="tx-primary">1.22% per day</span>
+                                </p>
+                            </div>
+                        </td>
+                        <td class="stat--deposit-open">
+                            <div class="statistics__td-title">Open deposit</div>
+                            <div class="statistics__deposit-open">
+                                <span>20.08.2022</span> <span>14:45</span>
+                            </div>
+                        </td>
+                        <td class="stat--payment">
+                            <div class="statistics__td-title">Deposit amount</div>
+                            <div class="statistics__payment">
+                                <b class="title-h4 light tx-primary">$500.00</b>
+                                <p>
+                                    <span class="tx-dark">Payment system:</span>
+                                    <i><img src="dist/images/pays/ltc.png" alt="ltc"></i>
+                                </p>
+                            </div>
+                        </td>
+                        <td class="stat--profit">
+                            <div class="statistics__td-title">Profit per day</div>
+                            <div class="statistics__profit">
+                                <span class="title-h4 light tx-dark">$97.00</span>
+                            </div>
+                        </td>
+                        <td class="stat--profit">
+                            <div class="statistics__td-title">Total profit</div>
+                            <div class="statistics__profit">
+                                <span class="title-h4 light tx-dark">$2340.00</span>
+                            </div>
+                        </td>
+                        <td class="stat--accruals">
+                            <div class="statistics__td-title">Total accruals</div>
+                            <div class="progressbar">
+                                <div class="progressbar__range">5 from 35</div>
+                                <div class="progressbar__line">
+                                    <div class="progressbar__line-active" style="width: 35%"></div>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="stat--timer">
+                            <div class="statistics__td-title">Following accrual through</div>
+                            <div class="countdown">
+                                <ul class="timer title-h3 light tx-primary" data-start="2019-03-13T11:55:30" data-now="2019-03-23T11:55:50" data-end="2019-03-25T11:56:00">
+                                    <li class="time hous">00</li>
+                                    <li class="sep">:</li>
+                                    <li class="time min">00</li>
+                                    <li class="sep">:</li>
+                                    <li class="time sec">00</li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="stat--deposit">
+                            <div class="statistics__td-title">Deposit</div>
+                            <div class="statistics__deposit">
+                                <i><img src="dist/images/icons/bean.svg" alt="Soybean"></i>
+                                <p>
+                                    <b class="title-h5 tx-dark">Soybean</b>
+                                    <span class="tx-primary">0.8%-1.42%<br/> per day</span>
+                                </p>
+                            </div>
+                        </td>
+                        <td class="stat--deposit-open">
+                            <div class="statistics__td-title">Open deposit</div>
+                            <div class="statistics__deposit-open">
+                                <span>20.08.2022</span> <span>14:45</span>
+                            </div>
+                        </td>
+                        <td class="stat--payment">
+                            <div class="statistics__td-title">Deposit amount</div>
+                            <div class="statistics__payment">
+                                <b class="title-h4 light tx-primary">$500.00</b>
+                                <p>
+                                    <span class="tx-dark">Payment system:</span>
+                                    <i><img src="dist/images/pays/doge.png" alt="doge"></i>
+                                </p>
+                            </div>
+                        </td>
+                        <td class="stat--profit">
+                            <div class="statistics__td-title">Profit per day</div>
+                            <div class="statistics__profit">
+                                <span class="title-h4 light tx-dark">$97.00</span>
+                            </div>
+                        </td>
+                        <td class="stat--profit">
+                            <div class="statistics__td-title">Total profit</div>
+                            <div class="statistics__profit">
+                                <span class="title-h4 light tx-dark">$2340.00</span>
+                            </div>
+                        </td>
+                        <td class="stat--accruals">
+                            <div class="statistics__td-title">Total accruals</div>
+                            <div class="progressbar">
+                                <div class="progressbar__range">33 from 35</div>
+                                <div class="progressbar__line">
+                                    <div class="progressbar__line-active" style="width: 95%"></div>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="stat--timer">
+                            <div class="statistics__td-title">Following accrual through</div>
+                            <div class="countdown">
+                                <ul class="timer title-h3 light tx-primary" data-start="2019-03-13T11:55:30" data-now="2019-03-23T11:55:50" data-end="2019-03-25T11:56:00">
+                                    <li class="time hous">00</li>
+                                    <li class="sep">:</li>
+                                    <li class="time min">00</li>
+                                    <li class="sep">:</li>
+                                    <li class="time sec">00</li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="deposit-archive mb-80">
+            <div class="container">
+                <div class="page-title"><h3>Archival Deposits</h3></div>
+
+                <div class="deposit-archive__slider owl-carousel" data-deposit-slider>
+                    <a href="#" class="deposit-archive__slider-item item">
+                        <div class="deposit-archive__slider-item-start">
+                            <img src="dist/images/icons/corn.svg" alt="corn">
+                            <span>Corn</span>
+                            <img src="dist/images/pays/btc.png" alt="btc">
+                        </div>
+                        <div class="deposit-archive__slider-item-end">
+                            <p>
+                                <span>Deposit amount:</span>
+                                <b class="title-h4 tx-primary light">$750.00</b>
+                            </p>
+                            <p>
+                                <span>Profit received:</span>
+                                <b class="title-h4 tx-dark light">$2367.00</b>
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#" class="deposit-archive__slider-item item">
+                        <div class="deposit-archive__slider-item-start">
+                            <img src="dist/images/icons/we.svg" alt="Wheat">
+                            <span>Wheat</span>
+                            <img src="dist/images/pays/ltc.png" alt="ltc">
+                        </div>
+                        <div class="deposit-archive__slider-item-end">
+                            <p>
+                                <span>Deposit amount:</span>
+                                <b class="title-h4 tx-primary light">$750.00</b>
+                            </p>
+                            <p>
+                                <span>Profit received:</span>
+                                <b class="title-h4 tx-dark light">$2367.00</b>
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#" class="deposit-archive__slider-item item">
+                        <div class="deposit-archive__slider-item-start">
+                            <img src="dist/images/icons/rice.svg" alt="Rice">
+                            <span>Rice</span>
+                            <img src="dist/images/pays/trc20.png" alt="trc20">
+                        </div>
+                        <div class="deposit-archive__slider-item-end">
+                            <p>
+                                <span>Deposit amount:</span>
+                                <b class="title-h4 tx-primary light">$750.00</b>
+                            </p>
+                            <p>
+                                <span>Profit received:</span>
+                                <b class="title-h4 tx-dark light">$2367.00</b>
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#" class="deposit-archive__slider-item item">
+                        <div class="deposit-archive__slider-item-start">
+                            <img src="dist/images/icons/bean.svg" alt="Soybean">
+                            <span>Soybean</span>
+                            <img src="dist/images/pays/xrp.png" alt="xrp">
+                        </div>
+                        <div class="deposit-archive__slider-item-end">
+                            <p>
+                                <span>Deposit amount:</span>
+                                <b class="title-h4 tx-primary light">$750.00</b>
+                            </p>
+                            <p>
+                                <span>Profit received:</span>
+                                <b class="title-h4 tx-dark light">$2367.00</b>
+                            </p>
+                        </div>
+                    </a>
+                    <a href="#" class="deposit-archive__slider-item item">
+                        <div class="deposit-archive__slider-item-start">
+                            <img src="dist/images/icons/corn.svg" alt="corn">
+                            <span>Corn</span>
+                            <img src="dist/images/pays/eth.png" alt="eth">
+                        </div>
+                        <div class="deposit-archive__slider-item-end">
+                            <p>
+                                <span>Deposit amount:</span>
+                                <b class="title-h4 tx-primary light">$750.00</b>
+                            </p>
+                            <p>
+                                <span>Profit received:</span>
+                                <b class="title-h4 tx-dark light">$2367.00</b>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="db-graph mb-50">
+            <div class="container">
+                <div class="db-graph__tabs tabs">
+                    <div class="db-graph__shield">
+                        <div class="select-group">
+                            <select data-select-custom>
+                                <option value="btc" data-balance="3784" data-percent="-5.18">$3784.00</option>
+                                <option value="eth" data-balance="3554" data-percent="-4.18">$3554.00</option>
+                                <option value="ltc" data-balance="344" data-percent="5.18">$344.00</option>
+                                <option value="trc20" data-balance="4684" data-percent="-8.18">$4684.00</option>
+                                <option value="erc20" data-balance="4684" data-percent="-4.1">$3484.00</option>
+                                <option value="xrp" data-balance="774" data-percent="-0.16">$774.00</option>
+                                <option value="dash" data-balance="6684" data-percent="-7.18">$6684.00</option>
+                                <option value="doge" data-balance="44784" data-percent="5.8">$44784.00</option>
+                                <option value="trx" data-balance="4484" data-percent="-5.00">$4484.00</option>
+                                <option value="bnb" data-balance="3584" data-percent="5.18">$3584.00</option>
+                            </select>
+                        </div>
+
+                        <div class="tabs__nav">
+                            <ul class="changeTime">
+                                <li><a href="javascript:void(0)" data-interval="1h">1 H</a></li>
+                                <li><a href="javascript:void(0)" class="active" data-interval="1d">1 D</a></li>
+                                <li><a href="javascript:void(0)" data-interval="1w">1 W</a></li>
+                                <li><a href="javascript:void(0)" data-interval="1M">1 M</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="tabs__body">
+                        <div class="db-graph__payment">
+                            <ul>
+                                <li>
+                                    <span class="title-h4 light tx-dark" data-pay-balance>$3784.00</span>
+                                    <b class="tx-dark" data-pay-curr>1 BTC</b>
+                                </li>
+                                <li>
+                                    <span class="title-h4 light tx-secondary" data-pay-percent>-5.18%</span>
+                                    <b class="tx-dark">24H Change</b>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="db-graph__chart">
+                            <div class="graficCurrentsBody">
+                                <figure class="highcharts-figure">
+                                    <div id="graficCurrentsContainer"></div>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="partners mb-50">
+            <div class="container">
+                <div class="page-title"><h3>Partners</h3></div>
+
+                <div class="partners__wrap">
+                    <div class="partners__graph">
+                        <figure class="highcharts-figure">
+                            <div id="partners"></div>
+                        </figure>
+                    </div>
+                    <div class="partners__list">
+                        <ul>
+                            <li class="item--total" data-index="0"><h4>Total number of partners</h4> <h2>3000</h2></li>
+                            <li class="item--earned" data-index="1" data-profit="1"><h4>Earned Referrals</h4> <h2>5000</h2></li>
+                            <li class="item--active" data-index="2"><h4>Active partners</h4> <h2>2000</h2></li>
+                            <li class="item--inactive" data-index="3"><h4>Inactive partners</h4> <h2>1000</h2></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="partners__figure">
+                    <div id="graficCurrentsContainer2"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="referral-link mb-30">
+            <div class="container">
+                <div class="referral-link__wrap">
+                    <label>Your referral link:</label>
+                    <input type="text" id="refLink" value="https://fglobali.io/referral/35896y90858985898" readonly/>
+                    <a href="javascript:void(0)" data-clipboard data-clipboard-target="#refLink" class="btn btn-secondary">Copy link</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="balance">
+        <div class="balance__caption">
+            <b>Your Balance:</b>
+            <span>$12784.59</span>
+        </div>
+        <ul class="balance__list">
+            <li class="balance__list-item">
+                <i><img src="dist/images/pays/btc.png" alt="Bitcoin"></i>
+                <b>Bitcoin</b>
+                <strong>1.4768768 BTC</strong>
+            </li>
+            <li class="balance__list-item">
+                <i><img src="dist/images/pays/eth.png" alt="Ethereum"></i>
+                <b>Ethereum</b>
+                <strong>236.34 ETH</strong>
+            </li>
+            <li class="balance__list-item">
+                <i><img src="dist/images/pays/ltc.png" alt="Litecoin"></i>
+                <b>Litecoin</b>
+                <strong>236.34 LTC</strong>
+            </li>
+            <li class="balance__list-item">
+                <i><img src="dist/images/pays/trx.png" alt="Tron"></i>
+                <b>Tron</b>
+                <strong>236.34 TRX</strong>
+            </li>
+            <li class="balance__list-item">
+                <i><img src="dist/images/pays/erc20.png" alt="Thether"></i>
+                <b>Thether</b>
+                <strong>236.34 ERC20</strong>
+            </li>
+            <li class="balance__list-item">
+                <i><img src="dist/images/pays/trc20.png" alt="Thether"></i>
+                <b>Thether</b>
+                <strong>236.34 TRC20</strong>
+            </li>
+            <li class="balance__list-item">
+                <i><img src="dist/images/pays/doge.png" alt="Dogecoin"></i>
+                <b>Dogecoin</b>
+                <strong>236.34 DOGE</strong>
+            </li>
+            <li class="balance__list-item">
+                <i><img src="dist/images/pays/xrp.png" alt="Ripple"></i>
+                <b>Ripple</b>
+                <strong>236.34 XRP</strong>
+            </li>
+            <li class="balance__list-item">
+                <i><img src="dist/images/pays/dash.png" alt="Dash"></i>
+                <b>Dash</b>
+                <strong>236.34 DASH</strong>
+            </li>
+            <li class="balance__list-item">
+                <i><img src="dist/images/pays/bnb.png" alt="Binance coin"></i>
+                <b>Binance coin</b>
+                <strong>236.34 BNB</strong>
+            </li>
+        </ul>
+
+        <ul class="balance__info" data-balance>
+            <li class="balance__info-item">
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-primary">Top up</a>
+                    <p><b>Total replenished:</b><span class="tx-primary">0.0354679 <sup>BTC</sup></span></p>
+                </div>
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-secondary">Withdraw</a>
+                    <p><b>Total withdrawn:</b><span class="tx-dark">0.0354679 <sup>BTC</sup></span></p>
+                </div>
+            </li>
+            <li class="balance__info-item">
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-primary">Top up</a>
+                    <p><b>Total replenished:</b><span class="tx-primary">0.0354679 <sup>ETH</sup></span></p>
+                </div>
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-secondary">Withdraw</a>
+                    <p><b>Total withdrawn:</b><span class="tx-dark">0.0354679 <sup>ETH</sup></span></p>
+                </div>
+            </li>
+            <li class="balance__info-item">
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-primary">Top up</a>
+                    <p><b>Total replenished:</b><span class="tx-primary">0.0354679 <sup>LTC</sup></span></p>
+                </div>
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-secondary">Withdraw</a>
+                    <p><b>Total withdrawn:</b><span class="tx-dark">0.0354679 <sup>LTC</sup></span></p>
+                </div>
+            </li>
+            <li class="balance__info-item">
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-primary">Top up</a>
+                    <p><b>Total replenished:</b><span class="tx-primary">0.0354679 <sup>TRX</sup></span></p>
+                </div>
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-secondary">Withdraw</a>
+                    <p><b>Total withdrawn:</b><span class="tx-dark">0.0354679 <sup>TRX</sup></span></p>
+                </div>
+            </li>
+            <li class="balance__info-item">
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-primary">Top up</a>
+                    <p><b>Total replenished:</b><span class="tx-primary">0.0354679 <sup>ERC20</sup></span></p>
+                </div>
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-secondary">Withdraw</a>
+                    <p><b>Total withdrawn:</b><span class="tx-dark">0.0354679 <sup>ERC20</sup></span></p>
+                </div>
+            </li>
+            <li class="balance__info-item">
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-primary">Top up</a>
+                    <p><b>Total replenished:</b><span class="tx-primary">0.0354679 <sup>TRC20</sup></span></p>
+                </div>
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-secondary">Withdraw</a>
+                    <p><b>Total withdrawn:</b><span class="tx-dark">0.0354679 <sup>TRC20</sup></span></p>
+                </div>
+            </li>
+            <li class="balance__info-item">
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-primary">Top up</a>
+                    <p><b>Total replenished:</b><span class="tx-primary">0.0354679 <sup>DOGE</sup></span></p>
+                </div>
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-secondary">Withdraw</a>
+                    <p><b>Total withdrawn:</b><span class="tx-dark">0.0354679 <sup>DOGE</sup></span></p>
+                </div>
+            </li>
+            <li class="balance__info-item">
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-primary">Top up</a>
+                    <p><b>Total replenished:</b><span class="tx-primary">0.0354679 <sup>XRP</sup></span></p>
+                </div>
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-secondary">Withdraw</a>
+                    <p><b>Total withdrawn:</b><span class="tx-dark">0.0354679 <sup>XRP</sup></span></p>
+                </div>
+            </li>
+            <li class="balance__info-item">
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-primary">Top up</a>
+                    <p><b>Total replenished:</b><span class="tx-primary">0.0354679 <sup>DASH</sup></span></p>
+                </div>
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-secondary">Withdraw</a>
+                    <p><b>Total withdrawn:</b><span class="tx-dark">0.0354679 <sup>DASH</sup></span></p>
+                </div>
+            </li>
+            <li class="balance__info-item">
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-primary">Top up</a>
+                    <p><b>Total replenished:</b><span class="tx-primary">0.0354679 <sup>BNB</sup></span></p>
+                </div>
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-secondary">Withdraw</a>
+                    <p><b>Total withdrawn:</b><span class="tx-dark">0.0354679 <sup>BNB</sup></span></p>
+                </div>
+            </li>
+        </ul>
+
+        <button class="balance__toggle" data-balance-toggle><i class="icon-str"></i></button>
+    </section>
+
+</main>
+
+
+<script src="dist/js/scripts.min.js"></script>
+<script src="dist/js/scripts.js"></script>
+
+<script>
+    // данные для coins
+
+    let dataCoin1 = {
+        name: 'BTC',
+        color: '#fd9701'
+    }
+    let dataCoin2 = {
+        name: 'ETC',
+        color: '#6976e7',
+    }
+    let dataCoin3 = {
+        name: 'LTC',
+        color: '#01a0d7',
+    }
+    let dataCoin4 = {
+        name: 'ADA',
+        color: '#55c49b',
+    }
+    let dataCoin5 = {
+        name: 'SOL',
+        color: '#94bc5d',
+    }
+    let dataCoin6 = {
+        name: 'XRP',
+        color: '#afafae',
+    }
+    let dataCoin7 = {
+        name: 'TRX',
+        color: '#f25e79',
+    }
+    let dataCoin8 = {
+        name: 'BTC',
+        color: '#ea6100',
+    }
+    let dataCoin9 = {
+        name: 'BTC',
+        color: '#d71f24',
+
+    }
+    let dataCoin10 = {
+        name: 'BTC',
+        color: '#3fd5d6',
+
+    }
+
+    // данные для графика партнеров
+    let dataPartner1 = {
+        name: 'ETH',
+        color: '#ffa200',
+        data: [
+            [1483232400000, 1400],
+            [1483318800000, 500],
+            [1483405200000, 3800],
+            [1483491600000, 2500],
+            [1483578000000, 2200],
+            [1483664400000, 3500],
+            [1483750800000, 2300]]
+    }
+
+    let dataPartner2 = {
+        name: 'BRC',
+        color: '#9bd63e',
+        data: [
+            [1483232400000, 1200],
+            [1483318800000, 500],
+            [1483405200000, 1800],
+            [1483491600000, 1500],
+            [1483578000000, 2500],
+            [1483664400000, 3100],
+            [1483750800000, 2300]]
+    }
+
+    let dataPartner3 = {
+        name: 'BTC',
+        color: '#ffcf0c',
+        data: [
+            [1483232400000, 4400],
+            [1483318800000, 100],
+            [1483405200000, 4200],
+            [1483491600000, 1200],
+            [1483578000000, 5200],
+            [1483664400000, 1200],
+            [1483750800000, 300]]
+    }
+
+    let dataPartner4 = {
+        name: 'ETC',
+        color: '#666666',
+        data: [[1483232400000, 200],
+            [1483318800000, 1500],
+            [1483405200000, 800],
+            [1483491600000, 1000],
+            [1483578000000, 1140],
+            [1483664400000, 2400],
+            [1483750800000, 1100]]
+    }
+
+    let defaultSeriesPartners = [
+        dataPartner1,
+        dataPartner2,
+        dataPartner3,
+        dataPartner4,
+    ]
+
+    let color_grafPartner = ['#ffa200', '#9bd63e', '#ffcf0c', '#666666']
+    let data_grafPartner = [
+        {
+            name: 'Active partners',
+            y: 2000,
+            title: 'BTC',
+            color: '#ffcf0c',
+            values: dataPartner3
+        },
+        {
+            name: 'Total number of partners',
+            y: 3000,
+            title: 'ETH',
+            color: '#ffa200',
+            values: dataPartner1
+        },
+        {
+            name: 'Earned Referrals',
+            y: 5000,
+            title: 'BRC',
+            color: '#9bd63e',
+            values: dataPartner2
+        },
+        {
+            name: 'Inactive partners',
+            y: 1000,
+            title: 'ETC',
+            color: '#666666',
+            values: dataPartner4
+        },
+    ]
+</script>
+
+<!-- Grafic -->
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/variable-pie.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+<!-- Binance Graph -->
+<script>
+    const setCurrentsGrafValues = (series = dataCoin2) => {
+        return series
+    }
+
+    const getData = (current = 'BTC', interval = '1d', grafic, series) => {
+        fetch(`https://api.binance.com/api/v1/klines?symbol=${current}USDT&interval=${interval}`)
+            .then((response) => {
+                return response.json();
+            })
+            .then((data) => {
+                myData = [];
+                data = data.reverse();
+                for (let i = 0; i < 11; i += 1) {
+                    myData[i] = [];
+                    myData[i][0] = data[i][0];
+                    myData[i][1] = Number(data[i][2]);
+                }
+                series.data = myData;
+                // console.log(`LOAD: ${current}, Interval: ${interval}`, series);
+                setDataGraf(grafic, series);
+            });
+    }
+
+    $('[data-select-custom]').on('change', () => {
+        const current = $('[data-select-custom]').val().toUpperCase()
+        const balance = $('[data-select-custom]').children('option:selected').data('balance');
+        const percent = $('[data-select-custom]').children('option:selected').data('percent');
+        const currency = $('[data-select-custom]').val();
+
+        $('[data-pay-balance]').html((!isNaN(balance) ? balance.toFixed(2) : '0.00') + ` <sup>${currency.toUpperCase()}</sup>`);
+        $('[data-pay-curr]').text(`1 ${currency.toUpperCase()}`);
+        $('[data-pay-percent]').text(`${percent} %`);
+
+        getData(current, '1d', graficCurrents, {
+            name: 'BTC',
+            color: '#ffc813',
+            data: null
+        })
+    })
+
+    const setDataGraf = (grafic, data) => {
+        let seriesLength = grafic.series.length;
+
+        for (let i = seriesLength - 1; i > -1; i--) {
+            grafic.series[i].remove();
+        }
+
+        let minArray = []
+        for (let i = 0; i < data.data.length; i += 1) {
+            minArray[i] = data.data[i][1]
+        }
+
+        grafic.update({
+            yAxis: {
+                max: Math.max.apply(null, minArray),
+                min: Math.min.apply(null, minArray)
+            },
+        });
+
+        grafic.addSeries({
+            name: data.name,
+            color: data.color,
+            data: data.data,
+        });
+    }
+
+    const optionsGrafCurrents = {
+        chart: {
+            type: 'area',
+            backgroundColor: 'transparent',
+        },
+        title: {
+            text: '',
+        },
+        xAxis: {
+            tickInterval: 24 * 3600 * 1000,
+            type: 'datetime',
+            labels: {
+                style: {
+                    fontFamily: 'Mont',
+                    fontSize: 13,
+                    color: '#333333',
+                    fontWeight: 'normal'
+                },
+            },
+        },
+        yAxis: {
+            title: {
+                text: ''
+            },
+            labels: {
+                style: {
+                    fontFamily: 'Mont',
+                    fontSize: 13,
+                    color: '#333333',
+                    fontWeight: 'normal'
+                },
+            },
+        },
+        tooltip: {
+            useHTML: true,
+            borderWidth: 0,
+            borderRadius: 0,
+            shadow: false,
+            padding: 10,
+            backgroundColor: '#8acf1e',
+            borderColor: '#8acf1e',
+            pointFormat: '<span class="value">{point.y}$</span>',
+        },
+        credits: {
+            enabled: false
+        },
+        plotOptions: {
+            area: {
+                pointStart: 2015,
+                //enableMouseTracking: false,
+                marker: {
+                    enabled: true,
+                    radius: 8,
+                    fillColor: '#ffffff',
+                    lineColor: '#8acf1e',
+                    lineWidth: 1,
+                    states: {
+                        hover: {
+                            enabled: true,
+                            lineWidth: 1,
+                            radius: 10,
+                        },
+                    }
+                }
+            },
+            series: {
+                fillOpacity: 0
+            }
+        },
+        legend: {
+            enabled: false
+        },
+        series: [
+            setCurrentsGrafValues()
+        ]
+    }
+
+    const graficCurrents = Highcharts.chart('graficCurrentsContainer', optionsGrafCurrents)
+
+    $('.listValue .item').click(function () {
+        $('.changeTime li > *').removeClass('active')
+        $('.listValue .item').removeClass('active')
+        $(this).addClass('active')
+
+        $('.changeTime li').map(function () {
+            let block = $(this).find('span')
+            if (block.attr('data-interval') == '1d') {
+                block.addClass('active')
+            }
+        })
+
+        let data = eval($(this).attr('data-value'))
+        getData(data.name, '1D', graficCurrents, data)
+        graficCurrents.update({
+            xAxis: {
+                tickInterval: 24 * 3600 * 1000,
+            },
+        });
+        $('.graficCurrentsHead .value').text($(this).find('.val').text())
+        $('.graficCurrentsHead .valueCur').text('1 ' + data.name)
+
+    })
+
+    $('.changeTime li > *').click(function () {
+        let currentName, currentColor = ''
+        $('.changeTime li > *').removeClass('active')
+        $(this).addClass('active')
+
+        let seriesLength = graficCurrents.series.length;
+        for (let i = seriesLength - 1; i > -1; i--) {
+            currentName = graficCurrents.series[i].name
+            currentColor = graficCurrents.series[i].color
+        }
+
+        let data = {
+            name: currentName,
+            color: currentColor,
+        }
+
+        switch ($(this).attr('data-interval')) {
+            case '1M':
+                graficCurrents.update({
+                    xAxis: {
+                        tickInterval: 30 * 24 * 3600 * 1000,
+                    },
+                });
+                break;
+            case '1w':
+                graficCurrents.update({
+                    xAxis: {
+                        tickInterval: 7 * 24 * 3600 * 1000,
+                    },
+                });
+                break;
+            case '1d':
+                graficCurrents.update({
+                    xAxis: {
+                        tickInterval: 24 * 3600 * 1000,
+                    },
+                });
+                break;
+            case '1h':
+                graficCurrents.update({
+                    xAxis: {
+                        tickInterval: 3600 * 1000,
+                    },
+                });
+                break;
+            default:
+                console.log('ошибка')
+        }
+
+        getData(currentName, $(this).attr('data-interval'), graficCurrents, data)
+    })
+
+    getData('BTC', '1d', graficCurrents, {
+        name: 'BTC',
+        color: '#ffc813',
+        data: null
+    })
+
+    $('.graficCurrentsHead .value').text($(this).find('.item.active .val').text())
+    $('.graficCurrentsHead .valueCur').text('1 BTC')
+</script>
+
+<!-- Partners Graph -->
+<script>
+    let grafOffice = $(".stateGraf")
+    let replenished = grafOffice.find(".replenished")
+    let value = grafOffice.find(".value")
+    let deposit = grafOffice.find(".deposit")
+    let accruals = grafOffice.find(".accruals")
+
+    const partners = Highcharts.chart('partners', {
+        chart: {
+            backgroundColor: 'transparent',
+            type: 'pie',
+            events: {
+                load: function () {
+                    this.myTooltip = new Highcharts.Tooltip(this, this.options.tooltip);
+                }
+            }
+        },
+        title: {
+            text: ''
+        },
+        plotOptions: {
+            pie: {
+                borderColor: 'transparent',
+                dataLabels: {
+                    enabled: false
+                }
+            },
+            series: {
+                stickyTracking: false,
+                states: {
+                    hover: {
+                        halo: {
+                            opacity: .7,
+                            size: 20,
+                        }
+                    }
+                },
+                events: {
+                    click: function (event) {
+                        this.chart.myTooltip.options.enabled = true;
+                        removeSeries()
+                        addSeries(event.point.values)
+                        $(".partners").removeClass("default")
+                        this.chart.myTooltip.refresh([event.point], event);
+                        this.chart.myTooltip.options.enabled = false;
+                    },
+                }
+            }
+        },
+
+        tooltip: {
+            enabled: false,
+            positioner: function () {
+                return { x: 0, y: 0 };
+            },
+            useHTML: true,
+            shadow: false,
+            borderWidth: 0,
+            backgroundColor: 'transparent',
+            headerFormat: '',
+            style:{
+                fontFamily: 'Mont',
+            },
+            formatter: function () {
+                if (this.colorIndex === Number($('[data-profit]').attr('data-profit'))) {
+                    return `<span class="title" style="color:${this.point.color}">${this.point.name}</span><br/><br/><span class="value" style="color:${this.point.color}">${this.y}$</span>`;
+                } else {
+                    return `<span class="title" style="color:${this.point.color}">${this.point.name}</span><br/><br/><span class="value" style="color:${this.point.color}">${this.y}</span>`;
+                }
+            },
+        },
+
+        colors: color_grafPartner,
+        series: [{
+            innerSize: '95%',
+            data: data_grafPartner
+        }]
+    });
+
+    $(".graficCabMain .capTitle").click(function () {
+        grafOffice.removeClass("open")
+        $(".yourBalance").removeClass("close")
+        $(".graficCabMain").addClass("default")
+    })
+
+    $('.partners__list li').click(function () {
+        let index = $(this).attr("data-index")
+        partners.myTooltip.options.enabled = true;
+        removeSeries()
+        updateTooltips(index)
+        partners.myTooltip.refresh(partners.series[0].data[index]);
+        addSeries(partners.series[0].data[index].values)
+        partners.myTooltip.options.enabled = false;
+        $(".partners").removeClass("default")
+    })
+
+    const addSeries = (series) => {
+        graficPartners.addSeries({
+            name: series.name,
+            color: series.color,
+            data: series.data,
+        });
+    }
+
+    const removeSeries = () => {
+        let seriesLength = graficPartners.series.length;
+        for (let i = seriesLength - 1; i > -1; i--) {
+            graficPartners.series[i].remove();
+        }
+    }
+
+    const updateTooltips = (index) => {
+        if (Number(index) === Number($('[data-profit]').attr('data-profit'))) {
+            graficPartners.update({
+                tooltip: {
+                    pointFormat: '<span class="value">${point.y}</span>',
+                    formatter: null
+                },
+            });
+        } else {
+            graficPartners.update({
+                tooltip: {
+                    pointFormat: '<span class="value">{point.y}</span>',
+                    formatter: null
+                },
+            });
+        }
+    }
+
+    $(".partners .capTitle").click(function () {
+        $(".partners").addClass("default")
+        partners.myTooltip.options.enabled = true;
+        removeSeries()
+        partners.myTooltip.refresh(partners.series[0].data);
+        partners.series[0].data.map(function (el, index) {
+            addSeries(el.values)
+        })
+        partners.myTooltip.options.enabled = false;
+    })
+
+    const setDataGrafPartners = (series = defaultSeriesPartners) => {
+        return series
+    }
+
+    const graficPartners = Highcharts.chart('graficCurrentsContainer2', {
+        chart: {
+            type: 'area',
+            backgroundColor: 'transparent',
+        },
+        title: {
+            text: ''
+        },
+        xAxis: {
+            type: 'datetime',
+            labels: {
+                style: {
+                    fontFamily: 'Mont',
+                    fontSize: 13,
+                    color: '#333333',
+                    fontWeight: 'normal'
+                },
+            },
+        },
+        yAxis: {
+            title: {
+                text: ''
+            },
+            labels: {
+                style: {
+                    fontFamily: 'Mont',
+                    fontSize: 13,
+                    color: '#333333',
+                    fontWeight: 'normal'
+                },
+                formatter: function () {
+                    return this.value / 1000 + 'k';
+                },
+            }
+        },
+        tooltip: {
+            useHTML: true,
+            borderWidth: 0,
+            borderRadius: 0,
+            shadow: false,
+            padding: 10,
+            backgroundColor: '#8acf1e',
+            borderColor: '#8acf1e',
+            // pointFormat: `<span class="value">{point.y}</span>`,
+            formatter: function () {
+                let time = new Date(this.x);
+                if (this.series._i == Number($('[data-profit]').attr('data-profit'))) {
+                    return `<span class="title">${time.toDateString()}</span><br/><span class="value">$${this.y}</span>`
+                } else {
+                    return `<span class="title">${time.toDateString()}</span><br/><span class="value">${this.y}</span>`
+                }
+            },
+        },
+        credits: {
+            enabled: false
+        },
+        plotOptions: {
+            area: {
+                pointStart: 2015,
+                //enableMouseTracking: false,
+                marker: {
+                    enabled: true,
+                    radius: 8,
+                    fillColor: '#ffffff',
+                    lineColor: '#8acf1e',
+                    lineWidth: 1,
+                    states: {
+                        hover: {
+                            enabled: true,
+                            lineWidth: 1,
+                            radius: 10,
+                        },
+                    }
+                }
+            },
+            series: {
+                fillOpacity: 0.2
+            }
+        },
+        legend: {
+            enabled: false
+        },
+        series: setDataGrafPartners()
+    });
+</script>
+
+</body>
+</html>

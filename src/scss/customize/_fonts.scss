@@ -1,0 +1,119 @@
+@mixin font-face($url, $weight){
+    @font-face{
+        src: local('#{$url}'),
+        url("../fonts/#{$url}.woff") format('woff'),
+        url("../fonts/#{$url}.woff2") format("woff2");
+
+        font-family: 'Mont';
+        font-weight: #{$weight};
+        font-style: normal;
+    }
+}
+
+@include font-face('Mont-Thin', 100);
+@include font-face('Mont-ExtraLight', 200);
+@include font-face('Mont-Light', 300);
+@include font-face('Mont-Regular', 400);
+@include font-face('Mont-Heavy', 500);
+@include font-face('Mont-SemiBold', 600);
+@include font-face('Mont-Bold', 700);
+@include font-face('Mont-ExtraBold', 800);
+@include font-face('Mont-Black', 900);
+
+
+@font-face {
+    font-family: 'icons';
+    src: url('../fonts/icons.eot');
+    src: url('../fonts/icons.eot') format('embedded-opentype'),
+    url('../fonts/icons.ttf') format('truetype'),
+    url('../fonts/icons.woff') format('woff'),
+    url('../fonts/icons.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+i {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icons' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-error:before {
+    content: "\e900";
+}
+.icon-info:before {
+    content: "\e901";
+}
+.icon-edit:before {
+    content: "\e902";
+}
+.icon-close:before {
+    content: "\e903";
+}
+.icon-search:before {
+    content: "\e904";
+}
+.icon-support:before {
+    content: "\e905";
+}
+.icon-add:before {
+    content: "\e906";
+}
+.icon-check1:before {
+    content: "\e907";
+}
+.icon-pdf-file:before {
+    content: "\e908";
+}
+.icon-placeholder:before {
+    content: "\e909";
+}
+.icon-call:before {
+    content: "\e90a";
+}
+.icon-mail:before {
+    content: "\e90b";
+}
+.icon-user:before {
+    content: "\e90c";
+}
+.icon-lock:before {
+    content: "\e90d";
+}
+.icon-globe:before {
+    content: "\e90e";
+}
+.icon-clock:before {
+    content: "\e90f";
+}
+.icon-str:before {
+    content: "\e910";
+}
+.icon-fb:before {
+    content: "\e911";
+}
+.icon-ins:before {
+    content: "\e912";
+}
+.icon-te:before {
+    content: "\e913";
+}
+.icon-yt:before {
+    content: "\e914";
+}
+.icon-vk:before {
+    content: "\e915";
+}
+.icon-check:before {
+    content: "\e916";
+}

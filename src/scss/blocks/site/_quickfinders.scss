@@ -1,0 +1,66 @@
+.quickfinders{
+    position: relative;
+    margin-top: -300px;
+    padding: 110px 0;
+    background-image: url("../images/qf/bg.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+
+    &.quickfinders--inner{
+        background-image: none;
+        margin: 0;
+        padding: 60px 0;
+
+        li{
+            margin: 30px 0;
+        }
+    }
+
+    ul{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -60px;
+    }
+
+    li{
+        position: relative;
+        width: 25%;
+        padding: 0 60px;
+        margin-top: 50px;
+
+        @include media-md{
+            width: 50%;
+        }
+
+        @include media-sm{
+            width: 100%;
+        }
+
+        &:not(:last-child):after{
+            content: '';
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 1px;
+            height: calc(100% - 130px);
+            background-color: $border-card;
+
+            @include media-sm{
+                display: none;
+            }
+        }
+    }
+
+    i{
+        position: relative;
+    }
+
+    h4{
+        margin-top: 50px;
+    }
+
+    p{
+        margin-top: 40px;
+    }
+}

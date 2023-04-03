@@ -1,0 +1,109 @@
+.indicators{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+
+    @include media-md{
+        flex-direction: column;
+    }
+
+    .page-title{
+        margin-bottom: 30px;
+    }
+
+    &__graph{
+        position: relative;
+        width: 55%;
+        padding: 100px 80px 40px 80px;
+        margin-bottom: -70px;
+        background-color: $white;
+        box-shadow: $shadow;
+        z-index: 1;
+
+        @include media-lgx{
+            padding: 80px 40px 80px 15px;
+        }
+
+        @include media-md{
+            width: 100%;
+            padding: 60px 15px;
+            margin: 0;
+        }
+
+        .tabs__body{
+            margin-top: 50px;
+        }
+    }
+
+    &__main{
+        position: relative;
+        align-self: self-start;
+        width: 45%;
+        padding: 100px 40px 80px 80px;
+        background-color: $card-bg;
+
+        @include media-lgx{
+            padding: 80px 15px 80px 40px;
+        }
+
+        @include media-md{
+            width: 100%;
+            padding: 60px 15px;
+        }
+
+        .tabs__body{
+            max-width: 530px;
+
+            @include media-lgx{
+                max-width: none;
+            }
+        }
+
+        .tabs__nav a {
+            background-color: $main-bg;
+
+            &.active {
+                background-color: $secondary;
+            }
+        }
+
+        .grid{
+            margin: 0 -30px;
+
+            @include media-lg{
+                margin: 0 -5px;
+            }
+        }
+
+        .grid-item{
+            padding: 0 30px;
+            margin-top: 40px;
+
+            @include media-lg{
+                padding: 0 5px;
+            }
+
+            h5{
+                position: relative;
+                font-weight: 600;
+                color: $primary;
+                margin-bottom: 20px;
+
+                @include underline($primary);
+            }
+
+            ul{
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                padding: 0 10px 0 40px;
+                margin-top: -20px;
+            }
+
+            li{
+                color: $font-dark;
+                font-size: 13px;
+            }
+        }
+    }
+}

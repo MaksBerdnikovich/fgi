@@ -1,0 +1,190 @@
+.referral{
+    position: relative;
+    display: flex;
+    padding: 0 100px 0 115px;
+
+    @include media-lgx{
+        padding: 0;
+    }
+
+    @include media-md{
+        flex-direction: column;
+    }
+
+    &__info{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 620px;
+        min-height: 540px;
+        background-color: $card-bg;
+
+        @include media-lgx{
+            width: auto;
+            padding: 80px 100px 80px 15px;
+        }
+
+        @include media-mdx{
+            padding: 80px 15px;
+        }
+
+        @include media-md{
+            width: 100%;
+            padding: 60px 15px;
+            min-height: auto;
+        }
+
+        .page-title{
+            max-width: 330px;
+            margin: 0 auto;
+
+            @include media-md{
+                max-width: none;
+            }
+        }
+    }
+
+    &__structure{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: calc(100% - 620px);
+        min-height: 610px;
+        margin: -35px 0;
+        z-index: 1;
+
+        @include media-lgx{
+            width: auto;
+            flex: 1 1 auto;
+        }
+
+        @include media-md{
+            width: 100%;
+            margin: 0;
+            padding: 60px 0;
+            min-height: auto;
+        }
+
+        box-shadow: $shadow;
+        background-image: url("../images/reff/bg.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+
+        .page-title{
+            max-width: none;
+            padding: 80px 80px 20px 80px;
+
+            @include media-lg{
+                padding: 80px 40px 20px 40px;
+            }
+
+            @include media-md{
+                padding: 20px 40px;
+            }
+
+            @include media-sm{
+                padding: 0 15px;
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    &__structure-list{
+        position: relative;
+
+        @include media-sm{
+            padding: 0 15px;
+        }
+
+        ul{
+            display: flex;
+            flex-direction: column;
+        }
+
+        li{
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            min-height: 100px;
+            align-items: center;
+
+            font-weight: 400;
+            color: $white;
+            text-align: left;
+
+            @include media-lgx{
+                text-align: center;
+            }
+
+            @include media-sm{
+                min-height: 60px;
+            }
+
+            div{
+                flex: 1 1 0;
+                transition: $transition;
+
+                &:first-child{
+                    max-width: 270px;
+                    text-align: center;
+
+                    @include media-lg{
+                        max-width: 140px;
+                    }
+
+                    @include media-sm{
+                        max-width: 50px;
+                        padding-right: 30px;
+                    }
+                }
+
+                &:last-child{
+                    max-width: 330px;
+
+                    @include media-sm{
+                        max-width: none;
+                    }
+
+                    @include media-sm{
+                        text-align: center;
+                        max-width: 200px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__structure-list-caption{
+        font-size: 20px;
+        line-height: 1.5;
+
+        @include media-sm{
+            font-size: 13px;
+        }
+    }
+
+    &__structure-list-item{
+        font-size: 30px;
+        cursor: pointer;
+
+        @include media-sm{
+            font-size: 16px;
+
+            .title-h2{
+                font-size: 20px;
+            }
+        }
+
+        @include styled-effect();
+
+        &:hover{
+            @include styled-effect-active($primary, 0, 30px);
+
+            div{
+                color: $white;
+            }
+        }
+    }
+}

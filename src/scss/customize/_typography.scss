@@ -1,0 +1,250 @@
+h1, .title-h1{
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 600;
+}
+
+h2, .title-h2{
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 600;
+    color: $font-dark;
+
+    @include media-sm{
+        font-size: 35px;
+        line-height: 45px;
+    }
+}
+
+h3, .title-h3 {
+    font-size: 35px;
+    line-height: 45px;
+    font-weight: 600;
+    color: $font-dark;
+
+    @include media-sm{
+        font-size: 25px;
+        line-height: 35px;
+    }
+}
+
+h4, .title-h4 {
+    font-size: 25px;
+    line-height: 35px;
+    font-weight: 600;
+    color: $font-dark;
+
+    @include media-sm{
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+h5, .title-h5 {
+    font-size: 20px;
+    line-height: 45px;
+    font-weight: normal;
+
+    @include media-sm{
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+h6, .title-h6 {
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: normal;
+}
+
+.title-giant{
+    font-size: 120px;
+    line-height: 120px;
+    font-weight: 400;
+
+    @include media-sm{
+        font-size: 100px;
+    }
+}
+
+.title-xlarge{
+    font-size: 110px;
+    line-height: 120px;
+    font-weight: 400;
+
+    @include media-sm{
+        font-size: 90px;
+    }
+}
+
+.title-large{
+    font-size: 100px;
+    line-height: 120px;
+    font-weight: 400;
+
+    @include media-sm{
+        font-size: 55px;
+        line-height: 65px;
+    }
+}
+
+.styled-subtitle{
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: 400;
+
+    @include media-sm{
+        font-size: 15px;
+        line-height: 25px;
+    }
+}
+
+h1.light, .title-h1.light,
+h2.light, .title-h2.light,
+h3.light, .title-h3.light,
+h4.light, .title-h4.light,
+h5.light, .title-h5.light,
+h6.light, .title-h6.light,
+.title-giant.light,
+.title-xlarge.light,
+.title-large.light,
+.styled-subtitle.light{
+    font-weight: 300 !important;
+}
+
+.title-xlarge.thin,
+.title-large.thin,
+.styled-subtitle.thin{
+    font-weight: 100 !important;
+}
+
+p {
+    font-size: 17px;
+    line-height: 25px;
+    font-weight: 400;
+}
+
+b{
+    font-weight: 700;
+}
+
+strong{
+    font-weight: 900;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: $transition;
+}
+
+button {
+    cursor: pointer;
+    transition: $transition;
+}
+
+a:hover,
+button:hover {
+    opacity: 0.85;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.body-small{
+    font-size: 15px;
+}
+
+.body-tiny{
+    font-size: 13px;
+}
+
+.tr-uppercase{
+    text-transform: uppercase;
+}
+
+.tr-capitalize{
+    text-transform: capitalize;
+}
+
+.tx-main {
+    color: $font;
+}
+
+.tx-primary {
+    color: $primary;
+}
+
+.tx-secondary {
+    color: $secondary;
+}
+
+.tx-dark {
+    color: $font-dark;
+}
+
+.tx-white {
+    color: $white;
+}
+
+.tx-success{
+    color: $success;
+}
+
+.tx-danger{
+    color: $danger;
+}
+
+.tx-info{
+    color: $info;
+}
+
+.tx-warning{
+    color: $warning;
+}
+
+.m-0{
+    margin: 0 !important;
+}
+
+.mt-0{
+    margin-top: 0 !important;
+}
+
+.p-0{
+    padding: 0 !important;
+}
+
+.mb-20{
+    margin-bottom: 20px;
+}
+
+.mb-30{
+    margin-bottom: 30px;
+}
+
+.mb-40{
+    margin-bottom: 40px;
+}
+
+.mb-50{
+    margin-bottom: 50px;
+}
+
+.mb-60{
+    margin-bottom: 60px;
+}
+
+.mb-80{
+    margin-bottom: 80px;
+}
+
+.mt-30{
+    margin-top: 30px;
+}
+
+.bg-none{
+    background-image: none !important;
+    background-color: transparent !important;
+}

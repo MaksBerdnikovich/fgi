@@ -1,0 +1,31 @@
+.animate-numbers{
+    position: absolute;
+    width: 1100px;
+    height: 312px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    animation-name: blink;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+
+    @keyframes blink {
+        0% {
+            opacity: 0.2
+        }
+        25% {
+            opacity: .5
+        }
+        50% {
+            opacity: .9
+        }
+        75% {
+            opacity: .5
+        }
+        100% {
+            opacity: 0.2
+        }
+    }
+}

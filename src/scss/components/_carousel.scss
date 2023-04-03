@@ -1,0 +1,60 @@
+.owl-nav,
+.carousel__nav{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+
+.owl-prev,
+.carousel__button.is-prev{
+    position: relative;
+    width: 38px;
+    height: 24px;
+    font-size: 0;
+
+    span, svg{
+        display: none;
+    }
+
+    &:after{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("../images/icons/prev.png");
+        background-repeat: no-repeat;
+    }
+
+    &.disabled{
+        opacity: 0.5;
+    }
+}
+
+.owl-next,
+.carousel__button.is-next{
+    position: relative;
+    width: 38px;
+    height: 24px;
+    font-size: 0;
+
+    span, svg{
+        display: none;
+    }
+
+    &:after{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("../images/icons/next.png");
+        background-repeat: no-repeat;
+    }
+
+    &.disabled{
+        opacity: 0.7;
+    }
+}

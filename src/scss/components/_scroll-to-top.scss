@@ -1,0 +1,40 @@
+.scroll-to-top {
+    position: fixed;
+    bottom: 90px;
+    right: 90px;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+    background: $scroll-top-bg;
+    cursor: pointer;
+    z-index: 1000;
+
+    transition: $transition;
+    opacity: 0;
+    visibility: hidden;
+
+    @include media-lg{
+        right: 15px;
+        bottom: 15px;
+    }
+
+    span{
+        font-size: 12px;
+        text-transform: uppercase;
+        margin: 10px 0;
+        color: $white;
+    }
+
+    &.show{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &:hover{
+        opacity: 0.8;
+    }
+}

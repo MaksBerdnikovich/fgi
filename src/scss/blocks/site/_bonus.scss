@@ -1,0 +1,76 @@
+.bonus{
+    position: relative;
+    padding: 60px 0 200px 0;
+
+    background-image: url("../images/reff/bg2.jpg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+
+    @include media-md{
+        padding: 60px 0;
+    }
+
+    &__list{
+        position: relative;
+
+        ul{
+            display: flex;
+
+            @include media-md{
+                flex-direction: column;
+            }
+        }
+
+        li{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: calc(100% / 3);
+            min-height: 490px;
+            padding: 60px 15px;
+            background-color: rgba($white, 0.5);
+            box-shadow: $shadow;
+            text-align: center;
+            z-index: 1;
+
+            @include styled-effect;
+
+            @include media-md{
+                width: 100%;
+                min-height: auto;
+            }
+
+            h5{
+                margin-top: 10px;
+            }
+
+            .title-giant{
+                margin-top: 40px;
+            }
+
+            .title-h3{
+                margin-top: 40px;
+            }
+
+            .btn{
+                margin-top: 40px;
+            }
+        }
+
+        li.active{
+            @include styled-effect-active($white, 40px, 0);
+            z-index: 2;
+
+            @include media-md{
+                margin: 40px 0;
+            }
+
+            .tx-white{
+                position: relative;
+            }
+        }
+    }
+}

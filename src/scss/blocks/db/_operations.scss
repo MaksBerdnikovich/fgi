@@ -1,0 +1,183 @@
+.operations{
+    position: relative;
+
+    .pagination{
+        margin-top: 50px;
+    }
+
+    &__filter{
+        position: relative;
+        padding: 25px 35px;
+        margin-top: 30px;
+        background-color: $card-bg;
+
+        @include media-sm{
+            padding: 25px 15px;
+        }
+    }
+
+    &__filter-list{
+        position: relative;
+        display: flex;
+        margin: 0 -15px;
+
+        @include media-lgx{
+            flex-wrap: wrap;
+        }
+
+        @include media-mdx{
+            flex-direction: column;
+        }
+    }
+
+    &__filter-item{
+        position: relative;
+        display: flex;
+        padding: 0 15px;
+
+        label{
+            color: $font-dark;
+        }
+
+        .select-group .selectric .label{
+            color: $font;
+        }
+
+        .btn{
+            align-self: flex-end;
+            min-width: 60px;
+            padding: 0;
+
+            @include media-lg{
+                min-width: 100%;
+            }
+
+            i{
+                margin: 0;
+            }
+        }
+    }
+
+    &__filter-item.filter-item--status{
+        @include media-mdx{
+            margin-bottom: 25px;
+        }
+
+        .select-group{
+            width: 190px;
+
+            @include media-mdx{
+                width: 100%;
+            }
+        }
+    }
+
+    &__filter-item.filter-item--date{
+        display: flex;
+        width: 35%;
+        margin: 0 -10px;
+
+        @include media-lgx{
+            width: 50%;
+            margin-bottom: 25px;
+        }
+
+        @include media-lg{
+            width: auto;
+            flex: auto;
+            justify-content: space-between;
+        }
+
+        @include media-xs{
+            flex-direction: column;
+        }
+
+        .select-group{
+            width: calc(100% / 3);
+            padding: 0 10px;
+
+            @include media-xs{
+                width: 100%;
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    &__table {
+        position: relative;
+        margin-top: 50px;
+
+        @include media-lgx{
+            overflow-x: auto;
+            @include scrollbar(6px);
+        }
+
+        table {
+            position: relative;
+            width: 100%;
+            table-layout: fixed;
+
+            @include media-lgx{
+                min-width: 1200px;
+            }
+
+            th{
+                height: 50px;
+                padding: 0 10px;
+                vertical-align: middle;
+                font-size: 14px;
+                font-weight: 600;
+                background-color: $card-bg;
+            }
+
+            td{
+                height: 60px;
+                vertical-align: middle;
+                padding: 5px 25px;
+                font-weight: 600;
+                font-size: 14px;
+                color: $font-dark;
+                background-color: $white;
+                border: 1px solid $main-bg;
+            }
+
+            .td--operation {
+                font-size: 17px;
+            }
+
+            .td--date {
+                span{
+                    padding-left: 10px;
+                }
+            }
+
+            .td--amount {
+                font-size: 25px;
+                font-weight: 300;
+                color: $primary;
+            }
+
+            .td--pay {
+                img{
+                    width: 25px;
+                    margin: -2px 5px 0 0;
+                }
+            }
+
+            .td--batch {
+                font-size: 17px;
+                font-weight: 400;
+            }
+
+            .td--status {
+                font-size: 17px;
+            }
+
+            td.td--info {
+                font-size: 12px;
+                line-height: 1.5;
+                color: $font;
+            }
+        }
+    }
+}

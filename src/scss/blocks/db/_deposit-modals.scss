@@ -1,0 +1,357 @@
+.modal.modal--deposit-open{
+    max-width: 880px;
+    background-color: $main-bg;
+    padding: 70px;
+
+    @include media-md{
+        padding: 40px 15px;
+    }
+
+    .carousel__button.is-close{
+        @include media-md{
+            right: 0;
+        }
+    }
+}
+
+.modal.modal--deposit-confirm{
+    background-color: $main-bg;
+    padding: 60px 60px 90px 60px;
+
+    @include media-md{
+        padding: 40px 15px;
+    }
+}
+
+.deposit-open{
+    position: relative;
+
+    &__amount{
+        position: relative;
+
+        ul{
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -10px;
+        }
+
+        li{
+            width: 50%;
+            padding: 0 10px;
+
+            @include media-xs{
+                width: 100%;
+            }
+        }
+
+        li + li{
+            @include media-xs{
+                margin-top: 20px;
+            }
+        }
+    }
+
+    &__amount-separator{
+        position: absolute;
+        width: auto !important;
+        height: auto;
+        padding: 0 !important;
+        margin: 0 !important;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 5;
+
+        i{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(111deg, #7bc900 0%, #9bd63e 100%);
+        }
+
+        img{
+            max-width: 25px;
+            filter: brightness(0) invert(1);
+        }
+    }
+
+    &__amount-item{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 190px;
+        width: 100%;
+        padding: 30px;
+        background-color: $white;
+        box-shadow: $shadow;
+
+        img{
+            max-width: 130px;
+        }
+
+        .title-h5{
+            color: $font;
+            line-height: 1;
+        }
+
+        .title-h3{
+            color: $primary;
+            font-size: 30px;
+            line-height: 1;
+            font-weight: 400;
+            margin-top: 20px;
+        }
+    }
+
+    &__stats{
+        position: relative;
+        margin-top: 15px;
+
+        ul{
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -10px;
+        }
+
+        li{
+            width: 50%;
+            padding: 0 10px;
+            margin-top: 20px;
+
+            @include media-xs{
+                width: 100%;
+            }
+        }
+    }
+
+    &__stats-item{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        min-height: 80px;
+        width: 100%;
+        padding: 0 30px;
+        background-color: $white;
+        box-shadow: $shadow;
+
+        b{
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .title-h5{
+            max-width: 100%;
+            margin-top: 15px;
+            line-height: 1;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+
+    &__alert{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 30px;
+        min-height: 80px;
+        margin-top: 35px;
+        background-color: $card-bg;
+        text-align: center;
+
+        @include media-xs{
+            text-align: left;
+        }
+
+        p{
+            font-size: 14px;
+            font-weight: 600;
+            color: $font;
+        }
+
+        b{
+            color: $font-dark;
+            font-size: 17px;
+            font-weight: 600;
+        }
+    }
+
+    &__confirm{
+        position: relative;
+        margin-top: 60px;
+
+        @include media-xs{
+            margin-top: 20px;
+        }
+
+        .checkbox-group{
+            text-align: left;
+
+            &__label{
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 1.7;
+
+                @include media-xs{
+                    font-size: 12px;
+                }
+            }
+
+            &__marker {
+                position: relative;
+                height: 34px;
+                min-width: 34px;
+                background: linear-gradient(111deg, #7bc900 0%, #9bd63e 100%);
+                border-radius: 50%;
+                cursor: pointer;
+                box-shadow: $shadow;
+            }
+
+            &__marker:after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 14px;
+                height: 14px;
+                border-radius: 50%;
+                box-shadow: $shadow;
+                background-color: $white;
+            }
+        }
+    }
+
+    &__btns{
+        position: relative;
+        margin-top: 50px;
+
+        @include media-xs{
+            margin: 0;
+        }
+
+        ul{
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -10px;
+        }
+
+        li{
+            width: 50%;
+            padding: 0 10px;
+            margin-top: 20px;
+
+            @include media-xs{
+                width: 100%;
+            }
+        }
+
+        .btn{
+            width: 100%;
+
+            &:focus{
+                outline: none !important;
+            }
+        }
+    }
+}
+
+.deposit-confirm{
+    position: relative;
+    max-width: 370px;
+    margin: 0 auto;
+
+    &__earn{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+
+        .title-h5{
+            color: $font;
+            line-height: 1;
+        }
+
+        .title-h2{
+            color: $primary;
+            line-height: 1;
+            font-weight: 400;
+            margin-top: 25px;
+        }
+    }
+
+    &__stats{
+        position: relative;
+        margin-top: 40px;
+
+        ul{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        li{
+            margin-top: 20px;
+        }
+    }
+
+    &__stats-item{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 80px;
+        width: 100%;
+        padding: 0 30px;
+        background-color: $white;
+        box-shadow: $shadow;
+        text-align: center;
+
+        b{
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .title-h5{
+            margin-top: 15px;
+            line-height: 1;
+        }
+    }
+
+    &__btn{
+        position: relative;
+        margin-top: 45px;
+
+        .btn{
+            width: 100%;
+
+            &:focus{
+                outline: none !important;
+            }
+        }
+    }
+
+    &__link{
+        position: relative;
+        margin-top: 35px;
+
+        a{
+            font-size: 17px;
+            color: $primary;
+            font-weight: 400;
+            text-decoration: underline;
+        }
+    }
+}

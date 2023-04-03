@@ -1,0 +1,65 @@
+.datepicker-dropdown{
+    width: 100%;
+}
+
+.datepicker-picker {
+    background-color: $white;
+    border-radius: $corner-5;
+}
+
+.datepicker-header .datepicker-controls .button {
+    color: $dark;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.datepicker-view .dow {
+    height: 3rem;
+    font-size: .875em;
+    font-weight: 500;
+    color: $dark;
+}
+
+.datepicker-grid{
+    width: auto;
+}
+.datepicker-view .days .datepicker-cell,
+.datepicker-view .dow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.datepicker-cell,
+.datepicker-view .week {
+    height: 3rem;
+    color: $dark;
+    font-weight: 400;
+}
+
+.datepicker-cell.next:not(.disabled),
+.datepicker-cell.prev:not(.disabled){
+    opacity: 0.3;
+    color: $dark;
+}
+
+.datepicker-cell.selected, .datepicker-cell.selected:hover {
+    background-color: $primary;
+    color: $white;
+    font-weight: 500;
+}
+
+.datepicker-cell.range {
+    background-color: $element-bg-active;
+    border-radius: 0;
+}
+
+.datepicker-cell.range-end:not(.selected),
+.datepicker-cell.range-start:not(.selected) {
+    background-color: $primary;
+    color: $white;
+}
+
+.datepicker-cell.range:not(.disabled):not(.focused):not(.today):hover {
+    background-color: $secondary;
+}

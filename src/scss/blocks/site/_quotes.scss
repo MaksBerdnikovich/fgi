@@ -1,0 +1,165 @@
+.quotes{
+    position: relative;
+    margin: 130px 0;
+
+    @include media-md{
+        margin: 60px 0;
+    }
+
+    &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        background-color: $card-bg;
+        z-index: 0;
+
+        @include media-md{
+            display: none;
+        }
+    }
+
+    &__wrap{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__table{
+        position: relative;
+        width: 50%;
+        padding-right: 100px;
+
+        @include media-lg{
+            padding-right: 40px;
+        }
+
+        @include media-md{
+            width: 100%;
+            padding: 0;
+        }
+
+        @include media-sm{
+            overflow: auto;
+        }
+
+        table{
+            position: relative;
+            width: 100%;
+            margin-top: 70px;
+        }
+
+        th{
+            font-size: 12px;
+            line-height: 1.5;
+            font-weight: 400;
+            padding: 0 25px 35px 25px;
+            text-transform: uppercase;
+            text-align: left;
+            vertical-align: top;
+
+            @include media-mdx{
+                padding: 0 10px 35px 10px;
+            }
+
+            &:first-child{
+                padding-left: 0;
+            }
+
+            &:last-child{
+                padding-right: 0;
+            }
+
+            &:nth-child(3){
+                text-align: center;
+            }
+        }
+
+        td{
+            padding: 7px 25px;
+            font-size: 13px;
+
+            @include media-mdx{
+                padding: 7px 10px;
+            }
+
+            &:first-child{
+               padding-left: 0;
+            }
+
+            &:last-child{
+                padding-right: 0;
+            }
+
+            &:nth-child(3){
+                text-align: center;
+            }
+
+            span{
+                font-size: 15px;
+            }
+
+            b{
+                font-size: 15px;
+                font-weight: 600;
+            }
+        }
+    }
+
+    &__rates{
+        position: relative;
+        width: 50%;
+        padding: 80px 0 80px 100px;
+
+        @include media-lg{
+            padding: 80px 0 80px 40px;
+        }
+
+        @include media-md{
+            width: 100%;
+            padding: 60px 0 0 0;
+        }
+
+        .grid{
+            position: relative;
+            margin: 0 -30px;
+
+            @include media-lg{
+                margin: 0 -15px;
+            }
+        }
+
+        .grid-item{
+            padding: 0 30px;
+            margin-top: 50px;
+
+            @include media-lg{
+                padding: 0 15px;
+            }
+
+            h5{
+                position: relative;
+                font-weight: 600;
+                color: $primary;
+                margin-bottom: 20px;
+
+                @include underline($primary);
+            }
+
+            ul{
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                padding: 0 10px 0 40px;
+                margin-top: -20px;
+            }
+
+            li{
+                color: $font-dark;
+                font-size: 13px;
+            }
+        }
+    }
+}

@@ -1,0 +1,175 @@
+.hero{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+
+    @include media-sm{
+        padding-bottom: 80px;
+    }
+
+    &__title{
+        position: relative;
+        width: 100%;
+        max-width: 1050px;
+        margin: 80px auto 0 auto;
+        padding: 0 15px;
+        text-align: center;
+        color: $white;
+
+        @include media-sm{
+            margin-top: 60px;
+        }
+
+        h5{
+            letter-spacing: 4px;
+            font-weight: 400;
+        }
+
+        h1{
+            margin-top: 20px;
+            word-break: break-word;
+        }
+    }
+
+    &.hero--splash .hero__title{
+        margin: 110px auto 0 auto;
+
+        @include media-sm{
+            margin-top: 60px;
+        }
+
+        h1{
+            margin-top: 50px;
+
+            @include media-sm{
+                margin-top: 30px;
+            }
+        }
+    }
+
+    &__excerpt{
+        width: 100%;
+        max-width: 630px;
+        padding: 0 15px;
+        margin: 45px auto 0 auto;
+        text-align: center;
+
+        @include media-sm{
+            margin-top: 30px;
+        }
+
+        p{
+            color: $white;
+            font-size: 20px;
+            line-height: 35px;
+        }
+    }
+
+    &__courses{
+        position: relative;
+        padding: 0 60px;
+        margin-top: 50px;
+        background-color: rgba($black, 0.2);
+        border-top: 1px solid #4d5a38;
+
+        @include media-lgx{
+            padding: 0 15px;
+        }
+
+        @include media-sm{
+            display: none;
+        }
+
+        ul{
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 0 -15px;
+
+            @include media-lg{
+                margin: 0 -5px;
+            }
+
+            @include media-md{
+                justify-content: center;
+            }
+        }
+
+        li{
+            padding: 0 15px;
+            margin: 35px 0 30px 0;
+
+            @include media-lg{
+                padding: 0 5px;
+            }
+
+            @include media-md{
+                padding: 0 15px;
+            }
+        }
+    }
+
+    &.hero--splash .hero__courses{
+        margin-top: 100px;
+        background-color: transparent;
+        backdrop-filter: blur(5px);
+    }
+
+    &__courses-item{
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        i{
+            margin-right: 20px;
+
+            @include media-mdx{
+                margin-right: 5px;
+            }
+
+            img{
+                width: 76px;
+                height: 76px;
+
+                @include media-mdx{
+                    width: 65px;
+                    height: 65px;
+                }
+            }
+        }
+
+        p{
+            display: flex;
+            flex-direction: column;
+            color: $white;
+
+            b{
+                font-size: 13px;
+                line-height: 1;
+                margin-bottom: 6px;
+            }
+
+            span.title-h5{
+                line-height: 1;
+                margin-bottom: 10px;
+            }
+
+            span.body-small{
+                line-height: 1;
+            }
+
+            .up{
+                color: $primary;
+            }
+
+            .down{
+                color: $secondary;
+            }
+        }
+    }
+}

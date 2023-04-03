@@ -1,0 +1,19 @@
+.countdown{
+    position: relative;
+    display: flex;
+    width: 170px;
+
+    ul{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    li{
+        min-width: 60px;
+    }
+
+    li.sep{
+        min-width: auto;
+    }
+}

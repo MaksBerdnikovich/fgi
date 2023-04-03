@@ -1,0 +1,180 @@
+.settings{
+    position: relative;
+
+    &__form {
+        position: relative;
+        margin-top: 50px;
+        padding: 55px 60px 60px 60px;
+        background-color: $card-bg;
+
+        @include media-lgx{
+            padding: 55px 30px 60px 30px;
+        }
+
+        @include media-sm{
+            padding: 30px 15px;
+        }
+    }
+
+    &__form-notice {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -30px;
+    }
+
+    &__form-notice-group {
+        position: relative;
+        padding: 0 30px;
+        width: 50%;
+        margin-bottom: 40px;
+
+        @include media-lgx{
+            width: 100%;
+        }
+    }
+
+    &__form-notice-item {
+        position: relative;
+        display: flex;
+        align-items: center;
+        min-height: 40px;
+        padding: 5px 15px;
+        background-color: $card-bg;
+        box-shadow: $shadow;
+        border: 1px solid transparent;
+        font-size: 15px;
+        font-weight: 600;
+
+        i{
+            font-size: 22px;
+            margin-right: 16px;
+        }
+
+        &.tx-success{
+            border-color: $success;
+        }
+
+        &.tx-info{
+            border-color: $info;
+        }
+
+        &.tx-danger{
+            border-color: $danger;
+        }
+
+        &.tx-warning{
+            border-color: $warning;
+        }
+    }
+
+    &__form-partner{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+        @include media-lgx{
+            margin-bottom: 30px;
+        }
+
+        b{
+            font-size: 17px;
+            font-weight: 600;
+        }
+
+        a{
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+    }
+
+    &__form-list{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -25px;
+    }
+
+    &__form-block{
+        position: relative;
+        width: calc(100% / 3);
+        padding: 0 25px;
+        margin-top: 40px;
+
+        @include media-lgx{
+            width: 100%;
+            margin-top: 0;
+        }
+
+        &.form-block--100{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 0;
+        }
+
+        &.form-block--100 .settings__form-group {
+            width: calc(100% / 3);
+            padding: 0 15px;
+            margin: 0;
+
+            @include media-lgx{
+                width: 50%;
+                margin-top: 30px;
+                padding: 0;
+            }
+
+            @include media-lg{
+                width: 100%;
+            }
+        }
+
+        &.form-block--100 .btn {
+            width: 100%;
+        }
+    }
+
+    &__form-group {
+        position: relative;
+        margin-bottom: 25px;
+
+        &.form-group--date{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -5px;
+            margin-bottom: 25px;
+        }
+
+        &.form-group--date .select-group{
+            padding: 0 5px;
+            width: calc(100% / 3);
+        }
+
+        &.form-group--date .input-group{
+            padding: 0 5px;
+            width: 100%;
+        }
+
+        .input-group i{
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            bottom: 0;
+            right: 0;
+            width: 65px;
+            height: 65px;
+
+            img{
+                max-width: 25px;
+            }
+        }
+
+        .select-group {
+            label {
+                color: $font-dark;
+            }
+        }
+    }
+}

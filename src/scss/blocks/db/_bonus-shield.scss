@@ -1,0 +1,59 @@
+.bonus-shield {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &__wrap{
+        position: relative;
+        display: flex;
+    }
+
+    &__title,
+    &__bonus{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $secondary;
+        min-height: 40px;
+        min-width: 190px;
+        text-align: center;
+
+        p{
+            color: $font-dark;
+            font-size: 15px;
+            line-height: 1.2;
+        }
+    }
+
+    &__bonus {
+        background-color: $white;
+        min-width: 160px;
+
+        p{
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        b{
+            font-size: 25px;
+        }
+    }
+
+    &__icon {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 50px;
+        height: 40px;
+        background-color: $primary;
+
+        i{
+            font-size: 25px;
+            color: $white;
+        }
+    }
+}

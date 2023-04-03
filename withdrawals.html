@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FGI</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="dist/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="dist/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="dist/images/favicon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta property="og:title" content="FGI">
+    <meta property="og:site_name" content="FGI">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+
+    <link rel="stylesheet" href="dist/css/style.min.css">
+    <link rel="stylesheet" href="dist/css/style.css">
+</head>
+<body class="dashboard">
+
+<header class="header">
+    <div class="header__area">
+        <div class="header__area-wrap">
+            <div class="header__area-start">
+                <div class="header__support">
+                    <a href="tel:1234567890">
+                        <i class="icon-support"></i> <span>Support</span>
+                    </a>
+                </div>
+                <div class="header__lang">
+                    <a href="javascript:void(0)" class="header__lang-curr" data-dropdown-toggle>
+                        <i class="icon-globe"></i> <b>En</b>
+                    </a>
+                    <ul class="header__lang-list" data-dropdown>
+                        <li><a class="header__lang-item" href="#">De</a></li>
+                        <li><a class="header__lang-item" href="#">It</a></li>
+                        <li><a class="header__lang-item" href="#">Ch</a></li>
+                        <li><a class="header__lang-item" href="#">Ru</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header__area-center">
+                <div class="bonus-shield">
+                    <a class="bonus-shield__wrap" href="#">
+                        <div class="bonus-shield__icon"><i class="icon-te"></i></div>
+                        <div class="bonus-shield__bonus"><p>Bonus <b>10$</b></p></div>
+                        <div class="bonus-shield__title"><p>For registration<br/> in Telegram</p></div>
+                    </a>
+                </div>
+            </div>
+            <div class="header__area-end">
+                <div class="header__email">
+                    <a href="mailto:contact@fglobali.io">
+                        <i class="icon-mail"></i> <span>contact@fglobali.io</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__data">
+        <div class="header__logo">
+            <a href="index.html" class="header__logo-item">
+                <img src="dist/images/db/logo.png" alt="logo">
+            </a>
+
+            <div class="header__toggle" data-menu-toggle></div>
+        </div>
+        <div class="header__stats">
+            <div class="container">
+                <ul class="header__stats-list">
+                    <li>
+                        <i><img src="dist/images/icons/username-2.svg" alt="username"></i>
+                        <p>
+                            <b>Welcome:</b>
+                            <span class="styled-subtitle light tx-primary">ivanovsky234</span>
+                        </p>
+                    </li>
+                    <li>
+                        <i><img src="dist/images/icons/calendar.svg" alt="calendar"></i>
+                        <p>
+                            <b>Registration date:</b>
+                            <span class="styled-subtitle light">23.07.2022  20:45</span>
+                        </p>
+                    </li>
+                    <li>
+                        <i><img src="dist/images/icons/calendar.svg" alt="calendar"></i>
+                        <p>
+                            <b>Last entrance:</b>
+                            <span class="styled-subtitle light">23.07.2022  20:45</span>
+                        </p>
+                    </li>
+                    <li>
+                        <i><img src="dist/images/icons/server.svg" alt="server"></i>
+                        <p>
+                            <b>Last entry from IP:</b>
+                            <span class="styled-subtitle light">200.150.332.100</span>
+                        </p>
+                    </li>
+                    <li class="stats-list--ref">
+                        <i><img src="dist/images/icons/link.svg" alt="link"></i>
+                        <p>
+                            <b>Your referral link:</b>
+                            <a href="javascript:void(0)" data-clipboard data-clipboard-text="https://fglobali.io/referral/35896y90858985898">
+                                <span>https://fglobali.io/referral/35896y90858985898</span>
+                            </a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header__balance">
+            <b>Your Balance:</b>
+            <span>$12784.59</span>
+        </div>
+    </div>
+</header>
+
+<main class="main-content">
+
+    <nav class="navigation" data-menu-nav>
+        <ul class="navigation__menu">
+            <li>
+                <a href="dashboard.html" class="navigation__menu-item">
+                    <i><img src="dist/images/icons/admin-panel.svg" alt="Dashboard"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="operations.html" class="navigation__menu-item">
+                    <i><img src="dist/images/icons/calendar-2.svg" alt="Operations"></i>
+                    <span>Operations</span>
+                </a>
+            </li>
+            <li>
+                <a href="security.html" class="navigation__menu-item">
+                    <i><img src="dist/images/icons/protection.svg" alt="Security"></i>
+                    <span>Security</span>
+                </a>
+            </li>
+            <li>
+                <a href="referral.html" class="navigation__menu-item">
+                    <i><img src="dist/images/icons/connection.svg" alt="Referral Program"></i>
+                    <span>Referral Program</span>
+                </a>
+            </li>
+            <li>
+                <a href="deposit.html" class="navigation__menu-item">
+                    <i><img src="dist/images/icons/safety-money.svg" alt="Open Deposit"></i>
+                    <span>Open Deposit</span>
+                </a>
+            </li>
+            <li>
+                <a href="withdrawals.html" class="navigation__menu-item active">
+                    <i><img src="dist/images/icons/refund.svg" alt="Withdrawals"></i>
+                    <span>Withdrawals</span>
+                </a>
+            </li>
+            <li>
+                <a href="information.html" class="navigation__menu-item">
+                    <i><img src="dist/images/icons/authentication.svg" alt="Personal Information"></i>
+                    <span>Personal Information</span>
+                </a>
+            </li>
+            <li>
+                <a href="index.html" class="navigation__menu-item">
+                    <i><img src="dist/images/icons/exit.svg" alt="Exit"></i>
+                    <span>Exit</span>
+                </a>
+            </li>
+            <li class="menu-item--copy">
+                <p>Copyright © 2022 <a href="#">Food Global Investment</a> All Righr Reserved</p>
+            </li>
+            <li class="menu-item--lang">
+                <div class="header__lang">
+                    <a href="javascript:void(0)" class="header__lang-curr" data-dropdown-toggle>
+                        <i class="icon-globe"></i> <b>English</b>
+                    </a>
+                    <ul class="header__lang-list" data-dropdown>
+                        <li><a class="header__lang-item" href="#">Germany</a></li>
+                        <li><a class="header__lang-item" href="#">Italy</a></li>
+                        <li><a class="header__lang-item" href="#">China</a></li>
+                        <li><a class="header__lang-item" href="#">Russian</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="menu-item--socials">
+                <div class="navigation__socials">
+                    <ul>
+                        <li><a href="#" class="header__socials-item"><i class="icon-vk"></i></a></li>
+                        <li><a href="#" class="header__socials-item"><i class="icon-yt"></i></a></li>
+                        <li><a href="#" class="header__socials-item"><i class="icon-te"></i></a></li>
+                        <li><a href="#" class="header__socials-item"><i class="icon-ins"></i></a></li>
+                        <li><a href="#" class="header__socials-item"><i class="icon-fb"></i></a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="wrapper">
+        <div class="withdraw">
+            <div class="container">
+                <div class="page-title"><h3>Withdrawals</h3></div>
+
+                <div class="withdraw__table">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Payment system</th>
+                            <th>Available balance</th>
+                            <th>Minimum amount</th>
+                            <th>Maximum amount</th>
+                            <th>Withdrawal time</th>
+                            <th>Commission</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr data-toggle>
+                            <td class="td--pay"><img src="dist/images/pays/btc.png" alt="btc"/> Bitcoin</td>
+                            <td class="td--balance">354.34 <sup>BTC</sup></td>
+                            <td class="td--amount">10.00 <sup>BTC</sup></td>
+                            <td class="td--amount">500.00 <sup>BTC</sup></td>
+                            <td class="td--time">2 days</td>
+                            <td class="td--commission">0.00%</td>
+                        </tr>
+                        <tr data-toggle-target>
+                            <td colspan="6" class="td--collapse">
+                                <div class="withdraw__system">
+                                    <div class="withdraw__system-block">
+                                        <div class="withdraw__system-item">
+                                            <div class="withdraw__system-amount">
+                                                <div class="input-group">
+                                                    <label>Enter amount:</label>
+                                                    <input type="text" value="" name="" />
+                                                </div>
+                                                <div class="wallet-group">
+                                                    <p>
+                                                        <span class="tx-dark">Your withdrawal wallet:</span>
+                                                        <b class="tx-primary">39588896878096</b>
+                                                    </p>
+                                                    <a href="#"><i class="icon-edit"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="withdraw__system-item">
+                                            <div class="withdraw__system-comiss">
+                                                <b class="tx-dark">Comission:</b>
+                                                <h4>1.00% <span>0.3435600 <sup>BTC</sup></span></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="withdraw__system-block">
+                                        <div class="withdraw__system-item">
+                                            <div class="withdraw__system-display">
+                                                <b class="tx-dark">Will be displayed:</b>
+                                                <h4>234.3435600 <sup>BTC</sup></h4>
+                                            </div>
+                                        </div>
+                                        <div class="withdraw__system-item">
+                                            <div class="withdraw__system-btn">
+                                                <a href="#" class="btn btn-secondary">Withdrawal</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr data-toggle class="active">
+                            <td class="td--pay"><img src="dist/images/pays/ltc.png" alt="ltc"/> Litecoin</td>
+                            <td class="td--balance">354.34 <sup>LTC</sup></td>
+                            <td class="td--amount">10.00 <sup>LTC</sup></td>
+                            <td class="td--amount">500.00 <sup>LTC</sup></td>
+                            <td class="td--time">2 days</td>
+                            <td class="td--commission">0.00%</td>
+                        </tr>
+                        <tr data-toggle-target style="display: table-row;">
+                            <td colspan="6" class="td--collapse">
+                                <div class="withdraw__system">
+                                    <div class="withdraw__system-block">
+                                        <div class="withdraw__system-item">
+                                            <div class="withdraw__system-amount">
+                                                <div class="input-group">
+                                                    <label>Enter amount:</label>
+                                                    <input type="text" value="" name="" />
+                                                </div>
+                                                <div class="wallet-group">
+                                                    <p>
+                                                        <span class="tx-dark">Your withdrawal wallet:</span>
+                                                        <b class="tx-primary">39588896878096</b>
+                                                    </p>
+                                                    <a href="#"><i class="icon-edit"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="withdraw__system-item">
+                                            <div class="withdraw__system-comiss">
+                                                <b class="tx-dark">Comission:</b>
+                                                <h4>1.00% <span>0.3435600 <sup>LTC</sup></span></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="withdraw__system-block">
+                                        <div class="withdraw__system-item">
+                                            <div class="withdraw__system-display">
+                                                <b class="tx-dark">Will be displayed:</b>
+                                                <h4>234.3435600 <sup>LTC</sup></h4>
+                                            </div>
+                                        </div>
+                                        <div class="withdraw__system-item">
+                                            <div class="withdraw__system-btn">
+                                                <a href="#" class="btn btn-secondary">Withdrawal</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr data-toggle>
+                            <td class="td--pay"><img src="dist/images/pays/trx.png" alt="ltc"/> Tron</td>
+                            <td class="td--balance">354.34 <sup>TRX</sup></td>
+                            <td class="td--amount">10.00 <sup>TRX</sup></td>
+                            <td class="td--amount">500.00 <sup>TRX</sup></td>
+                            <td class="td--time">2 days</td>
+                            <td class="td--commission">0.00%</td>
+                        </tr>
+                        <tr data-toggle-target>
+                            <td colspan="6" class="td--collapse">
+                                <div class="withdraw__system">
+                                    <div class="withdraw__system-block">
+                                        <div class="withdraw__system-item">
+                                            <div class="withdraw__system-amount">
+                                                <div class="input-group">
+                                                    <label>Enter amount:</label>
+                                                    <input type="text" value="" name="" />
+                                                </div>
+                                                <div class="wallet-group">
+                                                    <p>
+                                                        <span class="tx-dark">Your withdrawal wallet:</span>
+                                                        <b class="tx-primary">39588896878096</b>
+                                                    </p>
+                                                    <a href="#"><i class="icon-edit"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="withdraw__system-item">
+                                            <div class="withdraw__system-comiss">
+                                                <b class="tx-dark">Comission:</b>
+                                                <h4>1.00% <span>0.3435600 <sup>TRX</sup></span></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="withdraw__system-block">
+                                        <div class="withdraw__system-item">
+                                            <div class="withdraw__system-display">
+                                                <b class="tx-dark">Will be displayed:</b>
+                                                <h4>234.3435600 <sup>TRX</sup></h4>
+                                            </div>
+                                        </div>
+                                        <div class="withdraw__system-item">
+                                            <div class="withdraw__system-btn">
+                                                <a href="#" class="btn btn-secondary">Withdrawal</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr data-toggle>
+                            <td class="td--pay"><img src="dist/images/pays/btc.png" alt="btc"/> Bitcoin</td>
+                            <td class="td--balance">354.34 <sup>BTC</sup></td>
+                            <td class="td--amount">10.00 <sup>BTC</sup></td>
+                            <td class="td--amount">500.00 <sup>BTC</sup></td>
+                            <td class="td--time">2 days</td>
+                            <td class="td--commission">0.00%</td>
+                        </tr>
+                        <tr data-toggle-target>
+                            <td colspan="6" class="td--collapse">
+                                <div class="withdraw__system">
+                                    <div class="withdraw__system-block">
+                                        <div class="withdraw__system-item">
+                                            <div class="withdraw__system-amount">
+                                                <div class="input-group">
+                                                    <label>Enter amount:</label>
+                                                    <input type="text" value="" name="" />
+                                                </div>
+                                                <div class="wallet-group">
+                                                    <p>
+                                                        <span class="tx-dark">Your withdrawal wallet:</span>
+                                                        <b class="tx-primary">39588896878096</b>
+                                                    </p>
+                                                    <a href="#"><i class="icon-edit"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="withdraw__system-item">
+                                            <div class="withdraw__system-comiss">
+                                                <b class="tx-dark">Comission:</b>
+                                                <h4>1.00% <span>0.3435600 <sup>BTC</sup></span></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="withdraw__system-block">
+                                        <div class="withdraw__system-item">
+                                            <div class="withdraw__system-display">
+                                                <b class="tx-dark">Will be displayed:</b>
+                                                <h4>234.3435600 <sup>BTC</sup></h4>
+                                            </div>
+                                        </div>
+                                        <div class="withdraw__system-item">
+                                            <div class="withdraw__system-btn">
+                                                <a href="#" class="btn btn-secondary">Withdrawal</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr data-toggle>
+                            <td class="td--pay"><img src="dist/images/pays/ltc.png" alt="ltc"/> Litecoin</td>
+                            <td class="td--balance">354.34 <sup>LTC</sup></td>
+                            <td class="td--amount">10.00 <sup>LTC</sup></td>
+                            <td class="td--amount">500.00 <sup>LTC</sup></td>
+                            <td class="td--time">2 days</td>
+                            <td class="td--commission">0.00%</td>
+                        </tr>
+                        <tr data-toggle-target>
+                            <td colspan="6" class="td--collapse">
+                                <div class="withdraw__system">
+                                    <div class="withdraw__system-block">
+                                        <div class="withdraw__system-item">
+                                            <div class="withdraw__system-amount">
+                                                <div class="input-group">
+                                                    <label>Enter amount:</label>
+                                                    <input type="text" value="" name="" />
+                                                </div>
+                                                <div class="wallet-group">
+                                                    <p>
+                                                        <span class="tx-dark">Your withdrawal wallet:</span>
+                                                        <b class="tx-primary">39588896878096</b>
+                                                    </p>
+                                                    <a href="#"><i class="icon-edit"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="withdraw__system-item">
+                                            <div class="withdraw__system-comiss">
+                                                <b class="tx-dark">Comission:</b>
+                                                <h4>1.00% <span>0.3435600 <sup>LTC</sup></span></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="withdraw__system-block">
+                                        <div class="withdraw__system-item">
+                                            <div class="withdraw__system-display">
+                                                <b class="tx-dark">Will be displayed:</b>
+                                                <h4>234.3435600 <sup>LTC</sup></h4>
+                                            </div>
+                                        </div>
+                                        <div class="withdraw__system-item">
+                                            <div class="withdraw__system-btn">
+                                                <a href="#" class="btn btn-secondary">Withdrawal</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr data-toggle>
+                            <td class="td--pay"><img src="dist/images/pays/trx.png" alt="ltc"/> Tron</td>
+                            <td class="td--balance">354.34 <sup>TRX</sup></td>
+                            <td class="td--amount">10.00 <sup>TRX</sup></td>
+                            <td class="td--amount">500.00 <sup>TRX</sup></td>
+                            <td class="td--time">2 days</td>
+                            <td class="td--commission">0.00%</td>
+                        </tr>
+                        <tr data-toggle-target>
+                            <td colspan="6" class="td--collapse">
+                                <div class="withdraw__system">
+                                    <div class="withdraw__system-block">
+                                        <div class="withdraw__system-item">
+                                            <div class="withdraw__system-amount">
+                                                <div class="input-group">
+                                                    <label>Enter amount:</label>
+                                                    <input type="text" value="" name="" />
+                                                </div>
+                                                <div class="wallet-group">
+                                                    <p>
+                                                        <span class="tx-dark">Your withdrawal wallet:</span>
+                                                        <b class="tx-primary">39588896878096</b>
+                                                    </p>
+                                                    <a href="#"><i class="icon-edit"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="withdraw__system-item">
+                                            <div class="withdraw__system-comiss">
+                                                <b class="tx-dark">Comission:</b>
+                                                <h4>1.00% <span>0.3435600 <sup>TRX</sup></span></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="withdraw__system-block">
+                                        <div class="withdraw__system-item">
+                                            <div class="withdraw__system-display">
+                                                <b class="tx-dark">Will be displayed:</b>
+                                                <h4>234.3435600 <sup>TRX</sup></h4>
+                                            </div>
+                                        </div>
+                                        <div class="withdraw__system-item">
+                                            <div class="withdraw__system-btn">
+                                                <a href="#" class="btn btn-secondary">Withdrawal</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="pagination">
+                    <ul>
+                        <li class="pagination__prev"><a href="#"><img src="dist/images/icons/prev.png" alt="prev"></a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#" class="active">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li  class="pagination__next"><a href="#"><img src="dist/images/icons/next.png" alt="next"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="balance">
+        <div class="balance__caption">
+            <b>Your Balance:</b>
+            <span>$12784.59</span>
+        </div>
+        <ul class="balance__list">
+            <li class="balance__list-item">
+                <i><img src="dist/images/pays/btc.png" alt="Bitcoin"></i>
+                <b>Bitcoin</b>
+                <strong>1.4768768 BTC</strong>
+            </li>
+            <li class="balance__list-item">
+                <i><img src="dist/images/pays/eth.png" alt="Ethereum"></i>
+                <b>Ethereum</b>
+                <strong>236.34 ETH</strong>
+            </li>
+            <li class="balance__list-item">
+                <i><img src="dist/images/pays/ltc.png" alt="Litecoin"></i>
+                <b>Litecoin</b>
+                <strong>236.34 LTC</strong>
+            </li>
+            <li class="balance__list-item">
+                <i><img src="dist/images/pays/trx.png" alt="Tron"></i>
+                <b>Tron</b>
+                <strong>236.34 TRX</strong>
+            </li>
+            <li class="balance__list-item">
+                <i><img src="dist/images/pays/erc20.png" alt="Thether"></i>
+                <b>Thether</b>
+                <strong>236.34 ERC20</strong>
+            </li>
+            <li class="balance__list-item">
+                <i><img src="dist/images/pays/trc20.png" alt="Thether"></i>
+                <b>Thether</b>
+                <strong>236.34 TRC20</strong>
+            </li>
+            <li class="balance__list-item">
+                <i><img src="dist/images/pays/doge.png" alt="Dogecoin"></i>
+                <b>Dogecoin</b>
+                <strong>236.34 DOGE</strong>
+            </li>
+            <li class="balance__list-item">
+                <i><img src="dist/images/pays/xrp.png" alt="Ripple"></i>
+                <b>Ripple</b>
+                <strong>236.34 XRP</strong>
+            </li>
+            <li class="balance__list-item">
+                <i><img src="dist/images/pays/dash.png" alt="Dash"></i>
+                <b>Dash</b>
+                <strong>236.34 DASH</strong>
+            </li>
+            <li class="balance__list-item">
+                <i><img src="dist/images/pays/bnb.png" alt="Binance coin"></i>
+                <b>Binance coin</b>
+                <strong>236.34 BNB</strong>
+            </li>
+        </ul>
+
+        <ul class="balance__info" data-balance>
+            <li class="balance__info-item">
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-primary">Top up</a>
+                    <p><b>Total replenished:</b><span class="tx-primary">0.0354679 <sup>BTC</sup></span></p>
+                </div>
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-secondary">Withdraw</a>
+                    <p><b>Total withdrawn:</b><span class="tx-dark">0.0354679 <sup>BTC</sup></span></p>
+                </div>
+            </li>
+            <li class="balance__info-item">
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-primary">Top up</a>
+                    <p><b>Total replenished:</b><span class="tx-primary">0.0354679 <sup>ETH</sup></span></p>
+                </div>
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-secondary">Withdraw</a>
+                    <p><b>Total withdrawn:</b><span class="tx-dark">0.0354679 <sup>ETH</sup></span></p>
+                </div>
+            </li>
+            <li class="balance__info-item">
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-primary">Top up</a>
+                    <p><b>Total replenished:</b><span class="tx-primary">0.0354679 <sup>LTC</sup></span></p>
+                </div>
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-secondary">Withdraw</a>
+                    <p><b>Total withdrawn:</b><span class="tx-dark">0.0354679 <sup>LTC</sup></span></p>
+                </div>
+            </li>
+            <li class="balance__info-item">
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-primary">Top up</a>
+                    <p><b>Total replenished:</b><span class="tx-primary">0.0354679 <sup>TRX</sup></span></p>
+                </div>
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-secondary">Withdraw</a>
+                    <p><b>Total withdrawn:</b><span class="tx-dark">0.0354679 <sup>TRX</sup></span></p>
+                </div>
+            </li>
+            <li class="balance__info-item">
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-primary">Top up</a>
+                    <p><b>Total replenished:</b><span class="tx-primary">0.0354679 <sup>ERC20</sup></span></p>
+                </div>
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-secondary">Withdraw</a>
+                    <p><b>Total withdrawn:</b><span class="tx-dark">0.0354679 <sup>ERC20</sup></span></p>
+                </div>
+            </li>
+            <li class="balance__info-item">
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-primary">Top up</a>
+                    <p><b>Total replenished:</b><span class="tx-primary">0.0354679 <sup>TRC20</sup></span></p>
+                </div>
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-secondary">Withdraw</a>
+                    <p><b>Total withdrawn:</b><span class="tx-dark">0.0354679 <sup>TRC20</sup></span></p>
+                </div>
+            </li>
+            <li class="balance__info-item">
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-primary">Top up</a>
+                    <p><b>Total replenished:</b><span class="tx-primary">0.0354679 <sup>DOGE</sup></span></p>
+                </div>
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-secondary">Withdraw</a>
+                    <p><b>Total withdrawn:</b><span class="tx-dark">0.0354679 <sup>DOGE</sup></span></p>
+                </div>
+            </li>
+            <li class="balance__info-item">
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-primary">Top up</a>
+                    <p><b>Total replenished:</b><span class="tx-primary">0.0354679 <sup>XRP</sup></span></p>
+                </div>
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-secondary">Withdraw</a>
+                    <p><b>Total withdrawn:</b><span class="tx-dark">0.0354679 <sup>XRP</sup></span></p>
+                </div>
+            </li>
+            <li class="balance__info-item">
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-primary">Top up</a>
+                    <p><b>Total replenished:</b><span class="tx-primary">0.0354679 <sup>DASH</sup></span></p>
+                </div>
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-secondary">Withdraw</a>
+                    <p><b>Total withdrawn:</b><span class="tx-dark">0.0354679 <sup>DASH</sup></span></p>
+                </div>
+            </li>
+            <li class="balance__info-item">
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-primary">Top up</a>
+                    <p><b>Total replenished:</b><span class="tx-primary">0.0354679 <sup>BNB</sup></span></p>
+                </div>
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-secondary">Withdraw</a>
+                    <p><b>Total withdrawn:</b><span class="tx-dark">0.0354679 <sup>BNB</sup></span></p>
+                </div>
+            </li>
+        </ul>
+
+        <button class="balance__toggle" data-balance-toggle><i class="icon-str"></i></button>
+    </section>
+
+</main>
+
+
+<script src="dist/js/scripts.min.js"></script>
+<script src="dist/js/scripts.js"></script>
+
+</body>
+</html>

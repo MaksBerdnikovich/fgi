@@ -1,0 +1,23 @@
+.page-title{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 530px;
+    margin: 0 auto;
+    text-align: center;
+
+    &.page-title--start{
+        text-align: left;
+        margin: 0 auto 0 0;
+    }
+
+    &.page-title--end{
+        text-align: right;
+        margin: 0 0 0 auto;
+    }
+
+    .styled-subtitle{
+        margin-top: 30px;
+    }
+}

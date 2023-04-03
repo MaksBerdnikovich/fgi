@@ -1,0 +1,125 @@
+.why-fgi {
+    position: relative;
+    display: flex;
+
+    @include media-md{
+        flex-direction: column;
+    }
+
+    &__list {
+        position: relative;
+        width: 100%;
+        max-width: 1200px;
+        min-height: 660px;
+
+        background-image: url("../images/why/bg.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+
+        @include media-md{
+            order: 2;
+        }
+
+        @include media-md{
+            min-height: auto;
+        }
+
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            height: 100%;
+        }
+
+        li{
+            width: 50%;
+
+            @include media-md{
+                margin: 35px 0;
+            }
+
+            @include media-xs{
+                width: 100%;
+            }
+        }
+    }
+
+    &__list-item{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        padding: 30px 120px;
+        opacity: 1;
+
+        @include media-lgx{
+            width: auto;
+            padding: 0px 40px;
+        }
+
+        @include styled-effect;
+
+        &:hover {
+            @include styled-effect-active($white, 35px, 0);
+
+            img{
+                margin-top: -100%;
+            }
+
+            h4{
+                color: $white;
+            }
+        }
+
+        i{
+            position: relative;
+            display: flex;
+            height: 84px;
+            width: 84px;
+            overflow: hidden;
+
+            img{
+                width: 84px;
+                height: 168px;
+            }
+        }
+
+        h4{
+            margin-top: 30px;
+        }
+
+        p{
+            margin-top: 5px;
+        }
+    }
+
+    &__info{
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: calc(100% - 1200px);
+        padding: 0 40px 0 120px;
+
+        @include media-lgx{
+            width: auto;
+            padding: 80px 15px 80px 100px;
+        }
+
+        @include media-mdx{
+            padding: 80px 15px;
+        }
+
+        @include media-md{
+            padding: 60px 15px;
+        }
+
+        .page-title{
+            max-width: 340px;
+
+            @include media-md{
+                max-width: none;
+            }
+        }
+    }
+}

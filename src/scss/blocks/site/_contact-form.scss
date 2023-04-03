@@ -1,0 +1,45 @@
+.contact-form{
+    position: relative;
+    padding: 90px 0;
+
+    @include media-md{
+        padding: 60px 0;
+    }
+
+    &__wrap{
+        position: relative;
+        display: flex;
+        margin-top: 55px;
+
+        @include media-md{
+            flex-direction: column;
+        }
+
+        .form{
+            margin: 0 -30px;
+        }
+
+        .form--900{
+            max-width: 960px;
+
+            @include media-md{
+                max-width: none;
+            }
+        }
+
+        .form--350{
+            max-width: 410px;
+            margin-left: auto;
+
+            @include media-md{
+                max-width: none;
+                margin-left: -30px;
+                margin-top: 60px;
+            }
+        }
+
+        .form-col{
+            padding: 0 30px;
+        }
+    }
+}

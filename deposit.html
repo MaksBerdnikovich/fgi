@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FGI</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="dist/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="dist/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="dist/images/favicon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta property="og:title" content="FGI">
+    <meta property="og:site_name" content="FGI">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+
+    <link rel="stylesheet" href="dist/css/style.min.css">
+    <link rel="stylesheet" href="dist/css/style.css">
+</head>
+<body class="dashboard">
+
+<header class="header">
+    <div class="header__area">
+        <div class="header__area-wrap">
+            <div class="header__area-start">
+                <div class="header__support">
+                    <a href="tel:1234567890">
+                        <i class="icon-support"></i> <span>Support</span>
+                    </a>
+                </div>
+                <div class="header__lang">
+                    <a href="javascript:void(0)" class="header__lang-curr" data-dropdown-toggle>
+                        <i class="icon-globe"></i> <b>En</b>
+                    </a>
+                    <ul class="header__lang-list" data-dropdown>
+                        <li><a class="header__lang-item" href="#">De</a></li>
+                        <li><a class="header__lang-item" href="#">It</a></li>
+                        <li><a class="header__lang-item" href="#">Ch</a></li>
+                        <li><a class="header__lang-item" href="#">Ru</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header__area-center">
+                <div class="bonus-shield">
+                    <a class="bonus-shield__wrap" href="#">
+                        <div class="bonus-shield__icon"><i class="icon-te"></i></div>
+                        <div class="bonus-shield__bonus"><p>Bonus <b>10$</b></p></div>
+                        <div class="bonus-shield__title"><p>For registration<br/> in Telegram</p></div>
+                    </a>
+                </div>
+            </div>
+            <div class="header__area-end">
+                <div class="header__email">
+                    <a href="mailto:contact@fglobali.io">
+                        <i class="icon-mail"></i> <span>contact@fglobali.io</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__data">
+        <div class="header__logo">
+            <a href="index.html" class="header__logo-item">
+                <img src="dist/images/db/logo.png" alt="logo">
+            </a>
+
+            <div class="header__toggle" data-menu-toggle></div>
+        </div>
+        <div class="header__stats">
+            <div class="container">
+                <ul class="header__stats-list">
+                    <li>
+                        <i><img src="dist/images/icons/username-2.svg" alt="username"></i>
+                        <p>
+                            <b>Welcome:</b>
+                            <span class="styled-subtitle light tx-primary">ivanovsky234</span>
+                        </p>
+                    </li>
+                    <li>
+                        <i><img src="dist/images/icons/calendar.svg" alt="calendar"></i>
+                        <p>
+                            <b>Registration date:</b>
+                            <span class="styled-subtitle light">23.07.2022  20:45</span>
+                        </p>
+                    </li>
+                    <li>
+                        <i><img src="dist/images/icons/calendar.svg" alt="calendar"></i>
+                        <p>
+                            <b>Last entrance:</b>
+                            <span class="styled-subtitle light">23.07.2022  20:45</span>
+                        </p>
+                    </li>
+                    <li>
+                        <i><img src="dist/images/icons/server.svg" alt="server"></i>
+                        <p>
+                            <b>Last entry from IP:</b>
+                            <span class="styled-subtitle light">200.150.332.100</span>
+                        </p>
+                    </li>
+                    <li class="stats-list--ref">
+                        <i><img src="dist/images/icons/link.svg" alt="link"></i>
+                        <p>
+                            <b>Your referral link:</b>
+                            <a href="javascript:void(0)" data-clipboard data-clipboard-text="https://fglobali.io/referral/35896y90858985898">
+                                <span>https://fglobali.io/referral/35896y90858985898</span>
+                            </a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header__balance">
+            <b>Your Balance:</b>
+            <span>$12784.59</span>
+        </div>
+    </div>
+</header>
+
+<main class="main-content">
+
+    <nav class="navigation" data-menu-nav>
+        <ul class="navigation__menu">
+            <li>
+                <a href="dashboard.html" class="navigation__menu-item">
+                    <i><img src="dist/images/icons/admin-panel.svg" alt="Dashboard"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="operations.html" class="navigation__menu-item">
+                    <i><img src="dist/images/icons/calendar-2.svg" alt="Operations"></i>
+                    <span>Operations</span>
+                </a>
+            </li>
+            <li>
+                <a href="security.html" class="navigation__menu-item">
+                    <i><img src="dist/images/icons/protection.svg" alt="Security"></i>
+                    <span>Security</span>
+                </a>
+            </li>
+            <li>
+                <a href="referral.html" class="navigation__menu-item">
+                    <i><img src="dist/images/icons/connection.svg" alt="Referral Program"></i>
+                    <span>Referral Program</span>
+                </a>
+            </li>
+            <li>
+                <a href="deposit.html" class="navigation__menu-item active">
+                    <i><img src="dist/images/icons/safety-money.svg" alt="Open Deposit"></i>
+                    <span>Open Deposit</span>
+                </a>
+            </li>
+            <li>
+                <a href="withdrawals.html" class="navigation__menu-item">
+                    <i><img src="dist/images/icons/refund.svg" alt="Withdrawals"></i>
+                    <span>Withdrawals</span>
+                </a>
+            </li>
+            <li>
+                <a href="information.html" class="navigation__menu-item">
+                    <i><img src="dist/images/icons/authentication.svg" alt="Personal Information"></i>
+                    <span>Personal Information</span>
+                </a>
+            </li>
+            <li>
+                <a href="index.html" class="navigation__menu-item">
+                    <i><img src="dist/images/icons/exit.svg" alt="Exit"></i>
+                    <span>Exit</span>
+                </a>
+            </li>
+            <li class="menu-item--copy">
+                <p>Copyright © 2022 <a href="#">Food Global Investment</a> All Righr Reserved</p>
+            </li>
+            <li class="menu-item--lang">
+                <div class="header__lang">
+                    <a href="javascript:void(0)" class="header__lang-curr" data-dropdown-toggle>
+                        <i class="icon-globe"></i> <b>English</b>
+                    </a>
+                    <ul class="header__lang-list" data-dropdown>
+                        <li><a class="header__lang-item" href="#">Germany</a></li>
+                        <li><a class="header__lang-item" href="#">Italy</a></li>
+                        <li><a class="header__lang-item" href="#">China</a></li>
+                        <li><a class="header__lang-item" href="#">Russian</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="menu-item--socials">
+                <div class="navigation__socials">
+                    <ul>
+                        <li><a href="#" class="header__socials-item"><i class="icon-vk"></i></a></li>
+                        <li><a href="#" class="header__socials-item"><i class="icon-yt"></i></a></li>
+                        <li><a href="#" class="header__socials-item"><i class="icon-te"></i></a></li>
+                        <li><a href="#" class="header__socials-item"><i class="icon-ins"></i></a></li>
+                        <li><a href="#" class="header__socials-item"><i class="icon-fb"></i></a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="wrapper">
+        <form id="openDeposit" class="deposit" action="?" method="post">
+            <div class="container">
+                <div class="page-title"><h3>Open Deposit</h3></div>
+
+                <div class="deposit__plan">
+                    <div class="deposit__plan-title">Select investment plan:</div>
+                    <div class="deposit__plan-slider owl-carousel" data-deposit-slider>
+                        <div class="deposit__plan-slider-item item">
+                            <input id="plan-1" type="radio" name="plan" value="corn"
+                                   data-img="corn" data-name="Corn" data-percent="1.3" data-period="12" checked>
+
+                            <label for="plan-1">
+                                <div class="slider-item--start">
+                                    <img src="dist/images/icons/corn.svg" alt="corn">
+                                    <span>Corn</span>
+                                </div>
+                                <div class="slider-item--end">
+                                    <p>
+                                        <b class="title-h5 tx-primary">1.3% per day</b>
+                                        <span>for 12 months</span>
+                                    </p>
+                                    <p>
+                                        <b class="title-h4 tx-dark light">$50-$500</b>
+                                        <span>min-max</span>
+                                    </p>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="deposit__plan-slider-item item">
+                            <input id="plan-2" type="radio" name="plan" value="wheat"
+                                   data-img="we" data-name="Wheat" data-percent="1.4" data-period="12">
+
+                            <label for="plan-2">
+                                <div class="slider-item--start">
+                                    <img src="dist/images/icons/we.svg" alt="wheat">
+                                    <span>Wheat</span>
+                                </div>
+                                <div class="slider-item--end">
+                                    <p>
+                                        <b class="title-h5 tx-primary">1.4% per day</b>
+                                        <span>for 12 months</span>
+                                    </p>
+                                    <p>
+                                        <b class="title-h4 tx-dark light">$50-$500</b>
+                                        <span>min-max</span>
+                                    </p>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="deposit__plan-slider-item item">
+                            <input id="plan-3" type="radio" name="plan" value="rice"
+                                   data-img="rice" data-name="Rice" data-percent="1.5" data-period="12">
+
+                            <label for="plan-3">
+                                <div class="slider-item--start">
+                                    <img src="dist/images/icons/rice.svg" alt="rice">
+                                    <span>Rice</span>
+                                </div>
+                                <div class="slider-item--end">
+                                    <p>
+                                        <b class="title-h5 tx-primary">1.5% per day</b>
+                                        <span>for 12 months</span>
+                                    </p>
+                                    <p>
+                                        <b class="title-h4 tx-dark light">$50-$500</b>
+                                        <span>min-max</span>
+                                    </p>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="deposit__plan-slider-item item">
+                            <input id="plan-4" type="radio" name="plan" value="soybean"
+                                   data-img="bean" data-name="Soybean" data-percent="1.6" data-period="12">
+
+                            <label for="plan-4">
+                                <div class="slider-item--start">
+                                    <img src="dist/images/icons/bean.svg" alt="soybean">
+                                    <span>Soybean</span>
+                                </div>
+                                <div class="slider-item--end">
+                                    <p>
+                                        <b class="title-h5 tx-primary">1.6% per day</b>
+                                        <span>for 12 months</span>
+                                    </p>
+                                    <p>
+                                        <b class="title-h4 tx-dark light">$50-$500</b>
+                                        <span>min-max</span>
+                                    </p>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="deposit__plan-slider-item item">
+                            <input id="plan-5" type="radio" name="plan" value="corn"
+                                   data-img="corn" data-name="Corn" data-percent="1.3" data-period="6">
+
+                            <label for="plan-5">
+                                <div class="slider-item--start">
+                                    <img src="dist/images/icons/corn.svg" alt="corn">
+                                    <span>Corn</span>
+                                </div>
+                                <div class="slider-item--end">
+                                    <p>
+                                        <b class="title-h5 tx-primary">1.3% per day</b>
+                                        <span>for 6 months</span>
+                                    </p>
+                                    <p>
+                                        <b class="title-h4 tx-dark light">$50-$5000</b>
+                                        <span>min-max</span>
+                                    </p>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="deposit__plan-slider-item item">
+                            <input id="plan-6" type="radio" name="plan" value="wheat"
+                                   data-img="we" data-name="Wheat" data-percent="1.4" data-period="6">
+
+                            <label for="plan-6">
+                                <div class="slider-item--start">
+                                    <img src="dist/images/icons/we.svg" alt="wheat">
+                                    <span>Wheat</span>
+                                </div>
+                                <div class="slider-item--end">
+                                    <p>
+                                        <b class="title-h5 tx-primary">1.4% per day</b>
+                                        <span>for 6 months</span>
+                                    </p>
+                                    <p>
+                                        <b class="title-h4 tx-dark light">$50-$5000</b>
+                                        <span>min-max</span>
+                                    </p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="deposit__switch" data-switcher>
+                    <ul>
+                        <li>
+                            <div class="radio-group">
+                                <input id="switch-1" type="radio" name="switch" value="balance"
+                                       data-val="1000" data-cur="$">
+                                <label for="switch-1">with balance</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="radio-group">
+                                <input id="switch-2" type="radio" name="switch" value="payment" checked>
+                                <label for="switch-2">with payment system</label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="deposit__shield">
+                    <div class="select-group">
+                        <select data-select-deposit>
+                            <option value="btc" data-balance="100">Bitcoin</option>
+                            <option value="eth" data-balance="200">Ethereum</option>
+                            <option value="ltc" data-balance="300">Litecoin</option>
+                            <option value="trc20" data-balance="400">Thether TRC20</option>
+                            <option value="erc20" data-balance="400">Thether ERC20</option>
+                            <option value="xrp" data-balance="500">Ripple</option>
+                            <option value="dash" data-balance="600">Dash</option>
+                            <option value="doge" data-balance="700">Dogecoin</option>
+                            <option value="trx" data-balance="800">Tron</option>
+                            <option value="bnb" data-balance="900">Binance Coin</option>
+                        </select>
+                    </div>
+                    <div class="input-group input-group--balance">
+                        <label>Available balance:</label>
+                        <span data-available-balance></span>
+                    </div>
+                    <div class="input-group input-group--amount">
+                        <label>Enter amount:</label>
+                        <input type="number" value="" placeholder="0" name="" data-amount/>
+                    </div>
+                </div>
+
+                <div class="deposit__result">
+                    <ul>
+                        <li>
+                            <div class="deposit__result-item">
+                                <i><img src="dist/images/icons/we.svg" alt="Selected plan" data-dep-plan-img></i>
+                                <b>Selected plan:</b>
+                                <span class="title-h3 tx-dark light" data-dep-plan-name></span>
+                                <span class="title-h5 tx-primary" data-dep-plan-perc></span>
+                                <span class="body-small" data-dep-plan-period></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="deposit__result-item">
+                                <i><img src="dist/images/icons/safety-money.svg" alt="Deposit amount"></i>
+                                <b>Deposit amount:</b>
+                                <span class="title-h3 tx-primary light" data-dep-amount>120.00 <sup>ETH</sup></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="deposit__result-item">
+                                <i><img src="dist/images/icons/wealth.svg" alt="Income per day"></i>
+                                <b>Income per day:</b>
+                                <span class="title-h3 tx-primary light" data-daily-profit></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="deposit__result-item">
+                                <i><img src="dist/images/icons/profitability.svg" alt="Total income"></i>
+                                <b>Total income:</b>
+                                <span class="title-h3 tx-primary light" data-total-profit></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="deposit__btn">
+                    <button type="submit" class="btn btn-secondary">Open deposit</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <section class="balance">
+        <div class="balance__caption">
+            <b>Your Balance:</b>
+            <span>$12784.59</span>
+        </div>
+        <ul class="balance__list">
+            <li class="balance__list-item">
+                <i><img src="dist/images/pays/btc.png" alt="Bitcoin"></i>
+                <b>Bitcoin</b>
+                <strong>1.4768768 BTC</strong>
+            </li>
+            <li class="balance__list-item">
+                <i><img src="dist/images/pays/eth.png" alt="Ethereum"></i>
+                <b>Ethereum</b>
+                <strong>236.34 ETH</strong>
+            </li>
+            <li class="balance__list-item">
+                <i><img src="dist/images/pays/ltc.png" alt="Litecoin"></i>
+                <b>Litecoin</b>
+                <strong>236.34 LTC</strong>
+            </li>
+            <li class="balance__list-item">
+                <i><img src="dist/images/pays/trx.png" alt="Tron"></i>
+                <b>Tron</b>
+                <strong>236.34 TRX</strong>
+            </li>
+            <li class="balance__list-item">
+                <i><img src="dist/images/pays/erc20.png" alt="Thether"></i>
+                <b>Thether</b>
+                <strong>236.34 ERC20</strong>
+            </li>
+            <li class="balance__list-item">
+                <i><img src="dist/images/pays/trc20.png" alt="Thether"></i>
+                <b>Thether</b>
+                <strong>236.34 TRC20</strong>
+            </li>
+            <li class="balance__list-item">
+                <i><img src="dist/images/pays/doge.png" alt="Dogecoin"></i>
+                <b>Dogecoin</b>
+                <strong>236.34 DOGE</strong>
+            </li>
+            <li class="balance__list-item">
+                <i><img src="dist/images/pays/xrp.png" alt="Ripple"></i>
+                <b>Ripple</b>
+                <strong>236.34 XRP</strong>
+            </li>
+            <li class="balance__list-item">
+                <i><img src="dist/images/pays/dash.png" alt="Dash"></i>
+                <b>Dash</b>
+                <strong>236.34 DASH</strong>
+            </li>
+            <li class="balance__list-item">
+                <i><img src="dist/images/pays/bnb.png" alt="Binance coin"></i>
+                <b>Binance coin</b>
+                <strong>236.34 BNB</strong>
+            </li>
+        </ul>
+
+        <ul class="balance__info" data-balance>
+            <li class="balance__info-item">
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-primary">Top up</a>
+                    <p><b>Total replenished:</b><span class="tx-primary">0.0354679 <sup>BTC</sup></span></p>
+                </div>
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-secondary">Withdraw</a>
+                    <p><b>Total withdrawn:</b><span class="tx-dark">0.0354679 <sup>BTC</sup></span></p>
+                </div>
+            </li>
+            <li class="balance__info-item">
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-primary">Top up</a>
+                    <p><b>Total replenished:</b><span class="tx-primary">0.0354679 <sup>ETH</sup></span></p>
+                </div>
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-secondary">Withdraw</a>
+                    <p><b>Total withdrawn:</b><span class="tx-dark">0.0354679 <sup>ETH</sup></span></p>
+                </div>
+            </li>
+            <li class="balance__info-item">
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-primary">Top up</a>
+                    <p><b>Total replenished:</b><span class="tx-primary">0.0354679 <sup>LTC</sup></span></p>
+                </div>
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-secondary">Withdraw</a>
+                    <p><b>Total withdrawn:</b><span class="tx-dark">0.0354679 <sup>LTC</sup></span></p>
+                </div>
+            </li>
+            <li class="balance__info-item">
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-primary">Top up</a>
+                    <p><b>Total replenished:</b><span class="tx-primary">0.0354679 <sup>TRX</sup></span></p>
+                </div>
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-secondary">Withdraw</a>
+                    <p><b>Total withdrawn:</b><span class="tx-dark">0.0354679 <sup>TRX</sup></span></p>
+                </div>
+            </li>
+            <li class="balance__info-item">
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-primary">Top up</a>
+                    <p><b>Total replenished:</b><span class="tx-primary">0.0354679 <sup>ERC20</sup></span></p>
+                </div>
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-secondary">Withdraw</a>
+                    <p><b>Total withdrawn:</b><span class="tx-dark">0.0354679 <sup>ERC20</sup></span></p>
+                </div>
+            </li>
+            <li class="balance__info-item">
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-primary">Top up</a>
+                    <p><b>Total replenished:</b><span class="tx-primary">0.0354679 <sup>TRC20</sup></span></p>
+                </div>
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-secondary">Withdraw</a>
+                    <p><b>Total withdrawn:</b><span class="tx-dark">0.0354679 <sup>TRC20</sup></span></p>
+                </div>
+            </li>
+            <li class="balance__info-item">
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-primary">Top up</a>
+                    <p><b>Total replenished:</b><span class="tx-primary">0.0354679 <sup>DOGE</sup></span></p>
+                </div>
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-secondary">Withdraw</a>
+                    <p><b>Total withdrawn:</b><span class="tx-dark">0.0354679 <sup>DOGE</sup></span></p>
+                </div>
+            </li>
+            <li class="balance__info-item">
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-primary">Top up</a>
+                    <p><b>Total replenished:</b><span class="tx-primary">0.0354679 <sup>XRP</sup></span></p>
+                </div>
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-secondary">Withdraw</a>
+                    <p><b>Total withdrawn:</b><span class="tx-dark">0.0354679 <sup>XRP</sup></span></p>
+                </div>
+            </li>
+            <li class="balance__info-item">
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-primary">Top up</a>
+                    <p><b>Total replenished:</b><span class="tx-primary">0.0354679 <sup>DASH</sup></span></p>
+                </div>
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-secondary">Withdraw</a>
+                    <p><b>Total withdrawn:</b><span class="tx-dark">0.0354679 <sup>DASH</sup></span></p>
+                </div>
+            </li>
+            <li class="balance__info-item">
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-primary">Top up</a>
+                    <p><b>Total replenished:</b><span class="tx-primary">0.0354679 <sup>BNB</sup></span></p>
+                </div>
+                <div class="balance__info-item-row">
+                    <a href="#" class="btn btn-secondary">Withdraw</a>
+                    <p><b>Total withdrawn:</b><span class="tx-dark">0.0354679 <sup>BNB</sup></span></p>
+                </div>
+            </li>
+        </ul>
+
+        <button class="balance__toggle" data-balance-toggle><i class="icon-str"></i></button>
+    </section>
+
+</main>
+
+<!-- Open Deposit Modal -->
+<div id="modalOpenDeposit" class="modal modal--deposit-open" data-modal>
+    <div class="modal__body">
+        <form class="deposit-open" action="?">
+            <div class="deposit-open__amount">
+                <ul>
+                    <li>
+                        <div class="deposit-open__amount-item">
+                            <i><img src="dist/images/db/qr.png" alt="qr"></i>
+                        </div>
+                    </li>
+                    <li class="deposit-open__amount-separator">
+                        <i><img src="dist/images/pays/btc.png" alt="btc"></i>
+                    </li>
+                    <li>
+                        <div class="deposit-open__amount-item">
+                            <span class="title-h5">Amount:</span>
+                            <span class="title-h3">120.00 ETH</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="deposit-open__stats">
+                <ul>
+                    <li>
+                        <div class="deposit-open__stats-item">
+                            <b>State:</b>
+                            <span class="title-h5 light tx-primary">Prepared</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="deposit-open__stats-item">
+                            <b>Currency:</b>
+                            <span class="title-h5 light">Ethereum ETH</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="deposit-open__stats-item">
+                            <b>Date:</b>
+                            <span class="title-h5 light">20.09.2022 <span>18:49</span></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="deposit-open__stats-item">
+                            <b>Adress:</b>
+                            <span class="title-h5 light">BTCki78xforfP5SqDnRAY8bGsfBTCki78xforfP5SqDnRAY8bGsf</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="deposit-open__alert">
+                <p>Please don’t forget to specify the numbers after the comma, for example: <b>1.00001</b></p>
+            </div>
+
+            <div class="deposit-open__confirm">
+                <div class="checkbox-group">
+                    <label class="checkbox-group__handle">
+                        <input type="checkbox" name="confirm" required>
+                        <span class="checkbox-group__marker"></span>
+                        <span class="checkbox-group__label">
+                            Make your transfer according to the above details. The result will be shown immediately after
+                            confirmation in the blockchain network.
+                        </span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="deposit-open__btns">
+                <ul>
+                    <li><button class="btn btn-secondary" data-modal-close>Cancel</button></li>
+                    <li><button class="btn btn-primary" type="submit">I’ve paid</button></li>
+                </ul>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Confirm Deposit Modal -->
+<div id="modalConfirmDeposit1" class="modal modal--deposit-confirm" data-modal>
+    <div class="modal__icon mb-30">
+        <i><img src="dist/images/icons/checked-2.svg" alt="modal"></i>
+    </div>
+    <div class="modal__title mb-50"><h2>Excellence!</h2></div>
+    <div class="modal__body">
+        <div class="deposit-confirm">
+            <div class="deposit-confirm__earn">
+                <span class="title-h5">You have earned</span>
+                <span class="title-h2">$340.00</span>
+            </div>
+            <div class="deposit-confirm__stats">
+                <ul>
+                    <li>
+                        <div class="deposit-confirm__stats-item">
+                            <b>Total transactions:</b>
+                            <span class="title-h5 light tx-primary">25</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="deposit-confirm__stats-item">
+                            <b>Percentage of successfule trades:</b>
+                            <span class="title-h5 light tx-primary">35%</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="deposit-confirm__btn">
+                <button class="btn btn-secondary" data-modal-close>To continue trading</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modalConfirmDeposit2" class="modal modal--deposit-confirm" data-modal>
+    <div class="modal__icon mb-30">
+        <i><img src="dist/images/icons/thumbs-up.svg" alt="like"></i>
+    </div>
+    <div class="modal__title mb-50"><h2>Great!</h2></div>
+    <div class="modal__body">
+        <div class="deposit-confirm">
+            <div class="deposit-confirm__earn">
+                <span class="title-h5">You have earned on a demo accont</span>
+                <span class="title-h2">$3452.00</span>
+            </div>
+            <div class="deposit-confirm__stats">
+                <ul>
+                    <li>
+                        <div class="deposit-confirm__stats-item">
+                            <b>Total transactions:</b>
+                            <span class="title-h5 light tx-primary">25</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="deposit-confirm__stats-item">
+                            <b>Percentage of successfule trades:</b>
+                            <span class="title-h5 light tx-primary">35%</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="deposit-confirm__btn">
+                <button class="btn btn-secondary" data-modal-close>Open a real account</button>
+            </div>
+
+            <div class="deposit-confirm__link">
+                <a href="#">Stay trading on a demo account</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="dist/js/scripts.min.js"></script>
+<script src="dist/js/scripts.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,240 @@
+.security{
+    position: relative;
+
+    &__pass {
+        position: relative;
+        margin-top: 50px;
+        padding: 55px 60px 60px 60px;
+        background-color: $card-bg;
+
+        @include media-lgx{
+            padding: 55px 30px 60px 30px;
+        }
+
+        @include media-sm{
+            padding: 30px 15px;
+        }
+    }
+
+    &__pass-list {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -25px;
+    }
+
+    &__pass-group {
+        position: relative;
+        width: calc(100% / 3);
+        padding: 0 25px;
+        margin-top: 50px;
+
+        @include media-lgx{
+            width: 50%;
+            align-self: flex-end;
+        }
+
+        @include media-lgx{
+            width: 100%;
+        }
+
+        .btn{
+            width: 100%;
+        }
+
+        .social-sharing--styled li{
+            margin: 0;
+        }
+    }
+
+    &__auth{
+        position: relative;
+        margin-top: 60px;
+        padding: 60px;
+        background-color: $card-bg;
+
+        @include media-lgx{
+            padding: 60px 30px;
+        }
+
+        @include media-sm{
+            padding: 30px 15px;
+        }
+    }
+
+    &__auth-wrap {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -25px;
+    }
+
+    &__auth-block {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 0 25px;
+
+        &.block--start{
+            width: 430px;
+
+            @include media-lgx{
+                width: 100%;
+                margin-bottom: 50px;
+            }
+        }
+
+        &.block--end{
+            flex: 1 1 0;
+        }
+
+        &.block--end .security__auth-group{
+            max-width: 380px;
+
+            @include media-lgx{
+                max-width: none;
+            }
+        }
+    }
+
+    &__auth-group {
+        &:not(:last-child){
+            margin-bottom: 25px;
+        }
+
+        label{
+            color: $font-dark;
+        }
+
+        .btn{
+            width: 100%;
+            margin-top: 25px;
+        }
+    }
+
+    &__auth-confirm{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__auth-confirm-item{
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        &:first-child{
+            margin-bottom: 20px;
+        }
+
+        i{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 65px;
+            min-height: 65px;
+            font-size: 24px;
+            background-color: $white;
+            box-shadow: $shadow;
+        }
+
+        p{
+            display: flex;
+            flex-direction: column;
+            padding-left: 20px;
+            padding-top: 5px;
+            line-height: 1.7;
+            word-wrap: break-word;
+            word-break: break-all;
+
+            span{
+                font-size: 17px;
+                font-weight: 600;
+            }
+
+            b{
+                font-size: 20px;
+                font-weight: 600;
+            }
+        }
+    }
+
+    &__auth-twostep {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-top: auto;
+    }
+
+    &__auth-twostep-title {
+        @include media-lgx{
+            margin-top: 30px;
+        }
+
+        h5{
+            line-height: 1;
+        }
+    }
+
+    &__auth-twostep-text {
+        margin-top: 30px;
+
+        p{
+            font-size: 15px;
+        }
+    }
+
+    &__auth-twostep-qr {
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+        margin-bottom: 25px;
+
+        @include media-xs{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        i{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 185px;
+            min-height: 185px;
+            padding: 10px;
+            background-color: $white;
+            box-shadow: $shadow;
+
+            img{
+                width: 100%;
+            }
+        }
+
+        p{
+            padding-left: 20px;
+            padding-top: 5px;
+            line-height: 1.7;
+
+            @include media-xs{
+                padding: 0;
+                margin-top: 20px;
+            }
+
+            b{
+                display: block;
+                font-size: 15px;
+                font-weight: 600;
+            }
+
+            a{
+                font-size: 20px;
+                font-weight: 600;
+                color: $primary;
+                text-decoration: underline;
+            }
+        }
+    }
+}

@@ -1,0 +1,111 @@
+.products{
+    position: relative;
+    padding: 130px 0 180px 0;
+
+    background-image: url("../images/product/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+
+    @include media-md{
+        padding: 60px 0;
+    }
+
+    &__list{
+        position: relative;
+        margin-top: 120px;
+        z-index: 1;
+
+        @include media-md{
+            margin-top: 60px;
+        }
+
+        ul{
+            display: flex;
+
+            @include media-md{
+                flex-direction: column;
+            }
+        }
+
+        li{
+            width: 30%;
+            min-width: 450px;
+            min-height: 320px;
+            padding: 50px 60px;
+            background-color: rgba($white, 0.5);
+            text-align: center;
+
+            @include media-lg{
+                min-width: auto;
+                padding: 50px 15px;
+            }
+
+            @include media-md{
+                width: 100%;
+                padding: 60px 15px;
+                min-height: auto;
+            }
+
+            p{
+                font-size: 15px;
+                color: $font-dark;
+                margin-top: 5px;
+            }
+
+            h4{
+                margin-top: 30px;
+            }
+
+            img{
+                max-width: 85px;
+            }
+
+            a{
+                margin-top: 25px;
+            }
+        }
+
+        li.active{
+            width: 40%;
+            padding: 80px 100px;
+            min-height: 460px;
+            height: calc(100% + 70px);
+            margin-top: -35px;
+            margin-bottom: -35px;
+            background-color: $white;
+            box-shadow: $shadow;
+
+            @include media-md{
+                width: 100%;
+                padding: 60px 15px;
+                min-height: auto;
+                margin: 0;
+            }
+        }
+
+        &.list--inner ul{
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+
+        &.list--inner li{
+            width: 25%;
+            min-width: auto;
+            min-height: auto;
+            padding: 80px 50px;
+
+            @include media-mdx{
+                width: 50%;
+            }
+
+            @include media-sm{
+                width: 100%;
+            }
+        }
+
+        &.list--inner li.solid{
+            background-color: rgba($white, 0.8);
+        }
+    }
+}

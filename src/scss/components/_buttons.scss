@@ -1,0 +1,103 @@
+.btn{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 65px;
+    padding: 0 30px;
+
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-align: center;
+
+    outline: none;
+    border: 1px solid transparent;
+    opacity: 1 !important;
+    transition: $transition;
+
+    i{
+        font-size: 25px;
+        margin-right: 15px;
+    }
+}
+
+.btn-large{
+    min-height: 70px;
+
+    i{
+        font-size: 35px;
+        margin-right: 20px;
+    }
+}
+
+.btn-small{
+    min-height: 32px;
+    padding: 0 32px;
+    font-size: 15px;
+}
+
+.btn-primary{
+    color: $white;
+    background-color: $primary;
+
+    &:hover{
+        background-color: $primary-dark;
+    }
+}
+
+.btn-primary-outline{
+    color: $primary;
+    background-color: transparent;
+    border-color: $primary;
+}
+
+.btn-secondary{
+    background-color: $secondary;
+    color: $font-dark;
+
+    &:hover{
+        background-color: $secondary-dark;
+    }
+}
+
+.btn-secondary-outline{
+    background-color: transparent;
+    color: rgba($dark, 0.5);
+    border-color: $secondary;
+
+    &:hover{
+        color: rgba($dark, 0.7);
+        border-color: rgba($dark, 0.5);
+    }
+}
+
+.btn-light{
+    background-color: $white;
+    color: $font-dark;
+
+    &:not(.readonly):hover{
+        background-color: $secondary;
+    }
+}
+
+.btn-transparent-20{
+    background-color: rgba($white, 0.2);
+    color: $white;
+    box-shadow: $shadow;
+
+    &:not(.readonly):hover{
+        opacity: 0.8;
+    }
+}
+
+.btn-gradient{
+    color: $white;
+    box-shadow: $shadow;
+
+    background: $gradient;
+
+    &:not(.readonly):hover{
+        background: $primary;
+    }
+}

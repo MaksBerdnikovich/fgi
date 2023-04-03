@@ -1,0 +1,287 @@
+.conditions{
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    background-color: $white;
+
+    @include media-mdx{
+        flex-direction: column;
+    }
+
+    &__list-title{
+        position: relative;
+        font-size: 35px;
+
+        @include media-lg{
+            padding: 60px 15px 0 15px;
+        }
+    }
+
+    &__list{
+        position: relative;
+        background-color: $card-bg;
+        width: 100%;
+        max-width: 1100px;
+        padding: 110px 0  0 80px;
+        z-index: 1;
+
+        @include media-lg{
+            padding: 0;
+        }
+
+        @include media-mdx{
+            order: 2;
+        }
+
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        li{
+            position: relative;
+            width: 50%;
+            min-height: 290px;
+            padding: 40px 0;
+
+            @include media-sm{
+                width: 100%;
+                min-height: auto;
+            }
+
+            &:first-child:before{
+                content: '';
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 0;
+                width: 1px;
+                height: calc(100% - 80px);
+                background-color: $border-card;
+                z-index: 0;
+
+                @include media-sm{
+                    display: none;
+                }
+            }
+
+            &:first-child:after{
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: calc(100% - 40px);
+                height: 1px;
+                background-color: $border-card;
+                z-index: 0;
+
+                @include media-sm{
+                    display: none;
+                }
+            }
+
+            &:nth-child(2) {
+                padding-left: 60px;
+
+                @include media-lg{
+                    padding-left: 0;
+                }
+
+                &:after{
+                    left: auto;
+                    right: 0;
+                }
+            }
+        }
+    }
+
+    &__list-item{
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        opacity: 1;
+        z-index: 1;
+
+        @include media-lg{
+            padding: 15px;
+        }
+
+        &.active{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            h2{
+                font-size: 45px;
+            }
+
+            & > *{
+                position: relative;
+                z-index: 1;
+            }
+        }
+
+        &.active:before{
+            content: '';
+            position: absolute;
+            width: calc(100% + 35px);
+            height: calc(100% + 80px);
+            top: -40px;
+            right: -35px;
+            bottom: 0;
+            background: $gradient;
+            box-shadow: $shadow;
+            z-index: 0;
+
+            @include media-lgx{
+                width: 100%;
+                right: 0;
+            }
+        }
+    }
+
+    &__list-item-img {
+        position: relative;
+        display: flex;
+        margin-right: 20px;
+
+        img{
+            width: 84px;
+        }
+    }
+
+    &__list-item-txt{
+        h2{
+            line-height: 1;
+            word-wrap: break-word;
+        }
+    }
+
+    &__list-item-prc{
+        h2{
+            word-wrap: break-word;
+            word-break: break-all;
+        }
+    }
+
+    &__info{
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: calc(100% - 1100px);
+        padding: 0 15px 0 120px;
+
+        @include media-lgx{
+            width: auto;
+            padding: 60px 15px 60px 100px;
+        }
+
+        @include media-mdx{
+            padding: 60px 15px;
+        }
+
+        .page-title{
+            @include media-md{
+                max-width: none;
+            }
+        }
+
+        .page-title .styled-subtitle{
+            max-width: 350px;
+
+            @include media-mdx{
+                max-width: none;
+            }
+        }
+    }
+
+    &.conditions--end .conditions__list li{
+        &:first-child:before,
+        &:first-child:after{
+            display: none;
+        }
+
+        &:nth-child(2):before{
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            width: 1px;
+            height: calc(100% - 80px);
+            background-color: $border-card;
+            z-index: 0;
+
+            @include media-sm{
+                display: none;
+            }
+        }
+
+        &:nth-child(2):after{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: calc(100% - 40px);
+            height: 1px;
+            background-color: $border-card;
+            z-index: 0;
+
+            @include media-sm{
+                display: none;
+            }
+        }
+
+        &:nth-child(even) {
+            padding-left: 60px;
+
+            @include media-lg{
+                padding-left: 15px;
+            }
+        }
+    }
+
+    &.conditions--end .conditions__list-item.active{
+        margin-left: -80px;
+
+        @include media-lgx{
+            margin-left: -40px;
+        }
+
+        @include media-lg{
+            margin-left: 0;
+        }
+
+        &:before{
+            @include media-lgx{
+                width: calc(100% + 40px);
+            }
+
+            @include media-lg{
+                width: 100%;
+            }
+        }
+    }
+
+    &.conditions--end .conditions__list-item.active:before{
+        right: auto;
+        left: -35px;
+
+        @include media-lg{
+            left: 0;
+        }
+    }
+
+    &.conditions--end .conditions__info{
+        @include media-lgx{
+            width: auto;
+            padding: 60px 100px 60px 15px;
+        }
+
+        @include media-mdx{
+            padding: 60px 15px;
+        }
+    }
+}

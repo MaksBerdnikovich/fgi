@@ -1,0 +1,45 @@
+.animate-line{
+    position: absolute;
+    width: 1400px;
+    height: 720px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+
+    &__pulse {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: rgba($white, 0.4);
+        box-shadow: 0 0 0 rgba($white, 0.6);
+        animation: pulse 2s infinite;
+        cursor: pointer;
+
+        &.pulse--1{
+            bottom: 156px;
+            left: 304px;
+        }
+        &.pulse--2{
+            top: 330px;
+            right: 405px;
+        }
+        &.pulse--3{
+            top: 153px;
+            right: 95px;
+        }
+    }
+
+    @keyframes pulse {
+        0% {
+            box-shadow: 0 0 0 0 rgba($white, 0.6);
+        }
+        70% {
+            box-shadow: 0 0 0 15px rgba($white, 0);
+        }
+        100% {
+            box-shadow: 0 0 0 0 rgba($white, 0);
+        }
+    }
+}

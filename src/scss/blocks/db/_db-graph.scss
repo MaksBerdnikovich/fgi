@@ -1,0 +1,130 @@
+.db-graph{
+    position: relative;
+    z-index: 5;
+
+    &__shield{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 800px;
+        min-height: 70px;
+        margin: 0 auto;
+        padding-right: 35px;
+        background-color: $card-bg;
+        z-index: 5;
+
+        @include media-lg{
+            padding-right: 15px;
+        }
+
+        @include media-sm{
+            flex-direction: column;
+            padding: 0;
+        }
+
+        .select-group {
+            max-width: 240px;
+            box-shadow: $shadow;
+
+            @include media-sm{
+                max-width: none;
+                width: 100%;
+            }
+
+            .selectric{
+                min-height: 70px;
+            }
+        }
+    }
+
+    .tabs__nav{
+
+        @include media-sm{
+            margin: 20px 10px;
+        }
+
+        ul {
+            margin: 0 -5px;
+
+            @include media-mdx{
+                justify-content: flex-end;
+            }
+
+            @include media-sm{
+                justify-content: center;
+            }
+        }
+
+        li {
+            padding: 0 5px;
+            margin: 5px 0;
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 50px;
+            background-color: $white;
+
+            &.active {
+                background-color: $secondary;
+                opacity: 1;
+            }
+        }
+    }
+
+    .tabs__body{
+        position: relative;
+        width: 100%;
+        padding: 80px 40px 40px 40px;
+        margin-top: -35px;
+        background-color: $white;
+
+        @include media-lg{
+            padding: 60px 15px 40px 15px;
+        }
+    }
+
+    &__payment{
+        position: relative;
+
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        li{
+            display: flex;
+            flex-direction: column;
+            margin-right: 50px;
+
+            b{
+                padding-top: 5px;
+                font-weight: 600;
+                font-size: 14px;
+            }
+        }
+    }
+
+    &__chart{
+        position: relative;
+        width: 100%;
+        margin-top: 30px;
+
+        .highcharts-tooltip span{
+            font-family: 'Mont';
+            font-weight: 600;
+            font-size: 14px;
+            color: $white;
+            text-align: center;
+        }
+
+        .highcharts-tooltip .value{
+            font-size: 25px;
+            font-weight: 400;
+        }
+    }
+}

@@ -1,0 +1,220 @@
+.navigation{
+    position: relative;
+    flex: auto;
+    width: 180px;
+    min-height: 100%;
+    margin-left: 30px;
+    background-color: $white;
+
+    @include media-mdx{
+        margin-left: 10px;
+    }
+
+    @include media-md{
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin: 0;
+        width: 100%;
+        min-height: auto;
+        opacity: 0;
+        visibility: hidden;
+        transition: $transition;
+        background-color: $white;
+        z-index: 5;
+
+        &.open{
+            opacity: 1;
+            visibility: visible;
+            box-shadow: $shadow;
+        }
+    }
+
+    &__menu{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+        li{
+            border-bottom: 2px solid $main-bg;
+        }
+
+        li.menu-item--copy{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            min-height: 130px;
+            padding: 5px;
+            border: 0;
+
+            @include media-md{
+                display: none;
+            }
+
+            p{
+                font-size: 12px;
+            }
+
+            a{
+                display: flex;
+                width: 100%;
+                color: $primary;
+            }
+        }
+
+        li.menu-item--lang,
+        li.menu-item--socials{
+            display: none;
+            border-color: $white;
+
+            @include media-md{
+                display: block;
+            }
+        }
+
+        li.menu-item--lang,
+        li.menu-item--lang li,
+        li.menu-item--socials li{
+            border: 0;
+        }
+
+        li.menu-item--lang .header__lang{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+        }
+
+        li.menu-item--lang .header__lang-curr{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            color: $font-dark;
+            font-size: 17px;
+            min-height: 60px;
+            padding: 0 15px;
+
+            i{
+                font-size: 28px;
+            }
+
+            &:after{
+                right: 30px;
+            }
+        }
+
+        li.menu-item--lang .header__lang-list{
+            position: relative;
+            top: 0;
+        }
+
+        li.menu-item--lang .header__lang-item{
+            min-height: 45px;
+            padding: 0 30px;
+            opacity: 1;
+        }
+
+        li.menu-item--socials .navigation__socials{
+            background-color: $styled-bg;
+            border: 0;
+
+            ul{
+                display: flex;
+                flex-wrap: nowrap;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+                margin: 0;
+                min-height: 70px;
+            }
+
+            li{
+                width: auto;
+                padding: 0 10px;
+                border: 0;
+            }
+
+            a{
+                font-size: 18px;
+                color: $white;
+            }
+        }
+    }
+
+    &__menu-item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 130px;
+        color: $font-dark;
+        text-transform: capitalize;
+        text-align: center;
+        z-index: 1;
+        opacity: 1;
+
+        @include media-md{
+            min-height: 60px;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: row;
+            padding: 0 15px;
+        }
+
+        @include styled-effect;
+
+        &:not(.active):hover{
+            @include styled-effect-active($white, 0, 10px);
+
+            img{
+                filter: brightness(0) invert(1);
+            }
+
+            @include media-md{
+                &:after, &:before{
+                    display: none;
+                }
+                color: $primary;
+            }
+        }
+
+        &.active{
+            @include styled-effect-active($white, 0, 10px);
+
+            img{
+                filter: brightness(0) invert(1);
+            }
+
+            @include media-md{
+                &:after, &:before{
+                    display: none;
+                }
+                color: $primary;
+            }
+        }
+
+        span{
+            font-size: 14px;
+            font-weight: 700;
+            margin-top: 20px;
+            padding: 0 10px;
+
+            @include media-md{
+                margin: 0;
+                padding: 0;
+                font-size: 18px;
+            }
+        }
+
+        img{
+            width: 50px;
+            transition: $transition;
+
+            @include media-md{
+                display: none;
+            }
+        }
+    }
+}

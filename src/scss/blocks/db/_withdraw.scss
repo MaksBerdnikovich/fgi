@@ -1,0 +1,207 @@
+.withdraw{
+    position: relative;
+
+    .pagination{
+        margin-top: 50px;
+    }
+
+    [data-toggle-target]{
+        display: none;
+    }
+
+    &__table {
+        position: relative;
+        margin-top: 50px;
+
+        @include media-lgx{
+            overflow-x: auto;
+            @include scrollbar(6px);
+        }
+
+        table {
+            position: relative;
+            width: 100%;
+            table-layout: fixed;
+
+            @include media-lgx{
+                min-width: 1300px;
+            }
+
+            tr[data-toggle]{
+                cursor: pointer;
+                transition: $transition;
+            }
+
+            tr[data-toggle]:hover > td{
+                opacity: 0.8;
+            }
+
+            tr[data-toggle].active > td{
+                background: $gradient;
+                color: $white;
+                transition: $transition;
+
+                img{
+                    filter: brightness(0) invert(1);
+                }
+            }
+
+            th{
+                height: 50px;
+                padding: 0 10px;
+                vertical-align: middle;
+                font-size: 14px;
+                font-weight: 600;
+                background-color: $card-bg;
+            }
+
+            td{
+                height: 60px;
+                vertical-align: middle;
+                padding: 5px 30px;
+                font-weight: 600;
+                font-size: 14px;
+                color: $font-dark;
+                background-color: $white;
+                border: 1px solid $main-bg;
+                transition: $transition;
+            }
+
+            .td--collapse{
+                position: relative;
+                padding: 35px 65px;
+                background-color: $card-bg;
+
+                @include media-lgx{
+                    padding: 30px;
+                }
+            }
+
+            .td--pay {
+                font-size: 17px;
+
+                img{
+                    width: 25px;
+                    margin: -2px 5px 0 0;
+                }
+            }
+
+            .td--amount , .td--balance{
+                font-size: 25px;
+                font-weight: 300;
+            }
+            .td--balance{
+                color: $primary;
+            }
+
+            .td--commission {
+                font-size: 17px;
+                color: $primary;
+            }
+        }
+    }
+
+    &__system{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+
+        &:before{
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 32px;
+            height: 65px;
+            width: 2px;
+            background-color: $white;
+        }
+    }
+
+    &__system-block {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        margin: 0 -30px;
+    }
+
+    &__system-item{
+        position: relative;
+        padding: 0 30px;
+    }
+
+    &__system-amount {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+
+        label{
+            font-size: 17px;
+        }
+
+        .wallet-group{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 25px;
+
+            span{
+                font-size: 15px;
+                font-weight: 600;
+            }
+
+            b{
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 1;
+            }
+
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-width: 45px;
+                height: 45px;
+                text-align: center;
+                color: $white;
+                background: $gradient;
+                font-size: 24px;
+            }
+        }
+    }
+
+    &__system-comiss,
+    &__system-display{
+        position: relative;
+        padding-top: 35px;
+
+        b{
+            font-size: 17px;
+            font-weight: 600;
+        }
+
+        h4{
+            margin-top: 10px;
+            color: $primary;
+            white-space: nowrap;
+        }
+
+        span{
+            padding-left: 10px;
+            font-weight: 300;
+        }
+    }
+
+    &__system-btn {
+        position: relative;
+        padding-top: 32px;
+
+        .btn{
+            min-width: 250px;
+            width: 100%;
+        }
+    }
+}

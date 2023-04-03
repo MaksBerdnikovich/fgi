@@ -1,0 +1,62 @@
+.grid{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+
+    .grid-item{
+        position: relative;
+        width: 100%;
+        min-height: 100%;
+        padding: 0 15px;
+
+        &.grid-item--50{
+            width: 50%;
+
+            @include media-sm{
+                width: 100%;
+            }
+        }
+
+        &.grid-item--33{
+            width: calc(100% / 3);
+
+            @include media-md{
+                width: 50%;
+            }
+
+            @include media-sm{
+                width: 100%;
+            }
+        }
+
+        &.grid-item--25{
+            width: 25%;
+
+            @include media-md{
+                width: 50%;
+            }
+
+            @include media-sm{
+                width: 100%;
+            }
+        }
+    }
+
+    .grid-item--fluid{
+        width: calc(100% - 320px);
+
+        @include media-mdx{
+            width: 100%;
+        }
+    }
+
+    .grid-item--offset{
+        max-width: 320px;
+
+        @include media-mdx{
+            max-width: none;
+            width: 100%;
+        }
+    }
+}

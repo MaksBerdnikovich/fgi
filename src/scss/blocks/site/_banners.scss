@@ -1,0 +1,48 @@
+.banners {
+    position: relative;
+    display: flex;
+    padding: 30px 100px;
+    justify-content: space-between;
+    align-items: center;
+
+    @include media-lgx{
+        padding: 30px 15px;
+    }
+
+    @include media-mdx{
+        flex-direction: column;
+    }
+
+    &.banner--product {
+        min-height: 360px;
+        background-color: $primary;
+        background-image: url("../images/product/2.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    & > *{
+        padding: 30px;
+
+        @include media-mdx{
+            text-align: center;
+            max-width: none !important;
+        }
+    }
+
+    &__title {
+        min-width: 400px;
+        max-width: 400px;
+    }
+
+    &__text {
+        max-width: 850px;
+    }
+
+    &__btn{
+        .btn{
+            min-width: 300px;
+        }
+    }
+}

@@ -1,0 +1,104 @@
+.about{
+    position: relative;
+    margin: 110px 0;
+
+    @include media-md{
+        margin: 60px 0;
+    }
+
+    &__list{
+        position: relative;
+        margin-top: 120px;
+        z-index: 1;
+
+        @include media-md{
+            margin-top: 60px;
+        }
+
+        ul{
+            display: flex;
+
+            @include media-md{
+                flex-direction: column;
+            }
+        }
+
+        li{
+            width: 30%;
+            min-width: 450px;
+            min-height: 320px;
+            padding: 50px 60px;
+            background-color: $card-bg;
+            text-align: center;
+
+            @include media-lg{
+                min-width: auto;
+                padding: 50px 25px;
+            }
+
+            @include media-md{
+                width: 100%;
+                padding: 60px 15px;
+                min-height: auto;
+                margin: 0;
+            }
+
+            p{
+                margin-top: 40px;
+            }
+        }
+
+        li.active{
+            width: 40%;
+            padding: 80px 100px;
+            min-height: 390px;
+            height: calc(100% + 70px);
+            margin-top: -35px;
+            margin-bottom: -35px;
+
+            background-image: url("../images/about/1.jpg");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            box-shadow: $shadow;
+
+            @include media-lgx{
+                padding: 80px;
+            }
+
+            @include media-md{
+                width: 100%;
+                padding: 60px 15px;
+                min-height: auto;
+                margin: 0;
+            }
+
+            h4, p{
+                color: $white;
+            }
+        }
+    }
+
+    &__desc{
+        position: relative;
+        min-height: 580px;
+        margin-top: 40px;
+        padding: 80px 0;
+        background-image: url("../images/about/bg.png");
+        background-repeat: no-repeat;
+        background-position: center bottom;
+    }
+
+    &__desc-wrap{
+        position: relative;
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+        color: $font-dark;
+
+        .btn{
+            min-width: 250px;
+            margin-top: 80px;
+        }
+    }
+}

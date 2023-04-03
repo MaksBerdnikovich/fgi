@@ -1,0 +1,38 @@
+.social-sharing{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 -14px;
+
+    li{
+        padding: 0 14px;
+    }
+
+    a {
+        position: relative;
+        color: $font-dark;
+        font-size: 20px;
+    }
+}
+
+.social-sharing--styled{
+    margin: 0 -15px;
+
+    li{
+        padding: 0 15px;
+        margin: 15px 0;
+    }
+
+    a {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 65px;
+        height: 65px;
+        color: $white;
+        background: $gradient;
+        font-size: 28px;
+    }
+}

@@ -1,0 +1,300 @@
+.commodities{
+    position: relative;
+    padding: 70px 0 320px 0;
+
+    @include media-md{
+        padding: 0 0 300px 0;
+    }
+
+    &:after{
+        //content: '';
+        position: absolute;
+        width: 100%;
+        height: 580px;
+        bottom: -240px;
+        left: 0;
+        background-image: url("../images/comm/bg.png");
+        background-repeat: no-repeat;
+        background-position: center bottom;
+    }
+
+    &__line{
+        position: absolute;
+        height: 580px;
+        bottom: -240px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__line-pulse {
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        box-shadow: 0 0 0 rgba($primary, 0.8);
+        animation: pulses 2s infinite;
+        cursor: pointer;
+
+        &.pulse--1{
+            bottom: 315px;
+            left: 36px;
+        }
+        &.pulse--2{
+            bottom: 345px;
+            left: 164px;
+        }
+        &.pulse--3{
+            bottom: 286px;
+            left: 295px;
+        }
+        &.pulse--4{
+            bottom: 350px;
+            left: 426px;
+        }
+        &.pulse--5{
+            bottom: 383px;
+            left: 558px;
+        }
+        &.pulse--6{
+            bottom: 426px;
+            left: 686px;
+        }
+        &.pulse--7{
+            bottom: 436px;
+            left: 815px;
+        }
+        &.pulse--8{
+            bottom: 398px;
+            left: 948px;
+        }
+        &.pulse--9{
+            bottom: 460px;
+            right: 672px;
+        }
+        &.pulse--10{
+            bottom: 487px;
+            right: 544px;
+        }
+        &.pulse--11{
+            bottom: 502px;
+            right: 414px;
+        }
+        &.pulse--12{
+            bottom: 461px;
+            right: 281px;
+        }
+        &.pulse--13{
+            bottom: 522px;
+            right: 150px;
+        }
+        &.pulse--14{
+            bottom: 555px;
+            right: 25px;
+        }
+    }
+
+    @keyframes pulses {
+        0% {
+            box-shadow: 0 0 0 0 rgba($primary, 0.8);
+        }
+        70% {
+            box-shadow: 0 0 0 15px rgba($primary, 0);
+        }
+        100% {
+            box-shadow: 0 0 0 0 rgba($primary, 0);
+        }
+    }
+
+    .page-title{
+        max-width: none;
+        margin: 100px 0 70px 0;
+
+        @include media-md{
+            margin: 60px 0;
+        }
+    }
+
+    &.commodities--inner{
+        padding: 60px 0 120px 0;
+
+        &:after{
+            display: none;
+        }
+
+        .page-title{
+            max-width: none;
+
+        }
+    }
+
+    &__table{
+        position: relative;
+
+        @include media-md{
+            overflow-x: scroll;
+        }
+
+        table{
+            position: relative;
+            width: 100%;
+            table-layout: fixed;
+
+            @include media-md{
+                min-width: 900px;
+            }
+        }
+
+        th{
+            height: 30px;
+            vertical-align: top;
+            font-size: 12px;
+            text-transform: uppercase;
+            color: $font;
+            font-weight: 600;
+            text-align: left;
+
+            &:nth-child(-n + 2){
+                width: 200px;
+
+                @include media-md{
+                    width: auto;
+                }
+            }
+
+            &:first-child{
+                @include media-md{
+                    width: 200px;
+                }
+            }
+
+            &:last-child{
+                width: 50px;
+            }
+        }
+
+        td{
+            height: 70px;
+            border-top: 1px solid $border-card;
+            color: $font-dark;
+            font-weight: 600;
+            font-size: 17px;
+
+            &:nth-child(-n + 2){
+                width: 200px;
+            }
+
+            &:last-child{
+                width: 50px;
+            }
+
+            b{
+                font-weight: 600;
+            }
+
+            span{
+                font-weight: 400;
+                font-size: 15px;
+            }
+        }
+    }
+
+    &__quicks{
+        position: relative;
+
+        .grid{
+            margin: 0 -120px;
+
+            @include media-lg{
+                margin: 0 -80px;
+            }
+
+            @include media-mdx{
+                margin: 0 -60px;
+            }
+        }
+
+        .grid-item{
+            padding: 0 120px;
+
+            @include media-lg{
+                padding: 0 80px;
+            }
+
+            @include media-mdx{
+                padding: 0 60px;
+            }
+
+            @include media-md{
+                width: 50%;
+                margin: 0 0 30px 0;
+            }
+        }
+    }
+
+    &__quicks-item{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+
+        img{
+            width: 90px;
+        }
+
+        h2{
+            margin-top: 40px;
+        }
+
+        p{
+            margin-top: 10px;
+            font-size: 18px;
+
+            b{
+                font-weight: 600;
+                font-size: 17px;
+            }
+        }
+    }
+
+    &__chars{
+        .grid{
+            margin: 0 -60px;
+
+            @include media-lg{
+                margin: 0 -15px;
+            }
+        }
+
+        .grid-item{
+            padding: 0 60px;
+            margin-top: 30px;
+
+            @include media-lg{
+                padding: 0 15px;
+            }
+
+            h5{
+                position: relative;
+                font-weight: 600;
+                color: $primary;
+                margin-bottom: 20px;
+
+                @include underline($primary);
+            }
+
+            ul{
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                padding: 0 10px 0 40px;
+                margin-top: -20px;
+            }
+
+            li{
+                color: $font-dark;
+                font-size: 13px;
+            }
+        }
+    }
+}

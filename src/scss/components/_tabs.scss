@@ -1,0 +1,43 @@
+.tabs {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    &__nav {
+        position: relative;
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -7px;
+        }
+
+        li {
+            padding: 0 7px;
+            margin: 10px 0;
+        }
+
+        a {
+            position: relative;
+            display: flex;
+            align-items: center;
+            min-height: 25px;
+            padding: 5px 10px 3px 10px;
+            font-weight: 600;
+            font-size: 16px;
+            background-color: $card-bg;
+            color: $font-dark;
+            word-wrap: break-word;
+            word-break: break-all;
+
+            &.active {
+                background-color: $secondary;
+                opacity: 1;
+            }
+        }
+    }
+
+    &__body {
+        position: relative;
+    }
+}

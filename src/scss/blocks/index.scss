@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Mont';
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+/* SITE
+--------------------------------------------- */
+body.template {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1;
+    color: $font;
+    background-color: $main-bg;
+    overflow-x: hidden;
+
+    &.lock{
+       // overflow: hidden;
+    }
+
+    @include scrollbar(10px);
+
+    .main-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-height: 100%;
+        overflow: hidden;
+    }
+
+    .wrapper {
+        position: relative;
+        flex: 1 0 auto;
+        width: 100%;
+        height: 100%;
+    }
+
+    .container {
+        position: relative;
+        width: 100%;
+        max-width: 1450px;
+        padding: 0 15px;
+        margin: 0 auto;
+        z-index: 1;
+
+        @include media-lg{
+            &.container--outside{
+                width: calc(100% + 30px);
+                margin: 0 -15px;
+            }
+        }
+    }
+
+    /* Blocks Import
+    --------------------------------------------- */
+    @import "site/hero";
+
+    @import "site/header";
+
+    @import "site/footer";
+
+    @import "site/about";
+
+    @import "site/bonus";
+
+    @import "site/bonus-shield";
+
+    @import "site/quickfinders";
+
+    @import "site/products";
+
+    @import "site/indicators";
+
+    @import "site/commodities";
+
+    @import "site/referral";
+
+    @import "site/how-it-works";
+
+    @import "site/why-fgi";
+
+    @import "site/quotes";
+
+    @import "site/company";
+
+    @import "site/news";
+
+    @import "site/news-latest";
+
+    @import "site/news-grid";
+
+    @import "site/mission";
+
+    @import "site/who-we";
+
+    @import "site/goals";
+
+    @import "site/reviews";
+
+    @import "site/focused";
+
+    @import "site/plans";
+
+    @import "site/banners";
+
+    @import "site/agreements";
+
+    @import "site/partnership";
+
+    @import "site/conditions";
+
+    @import "site/faq";
+
+    @import "site/contacts";
+
+    @import "site/contact-form";
+
+    @import "site/documents";
+
+    @import "site/registration";
+
+    @import "site/login";
+
+    @import "site/animate-map";
+
+    @import "site/animate-line";
+
+    @import "site/animate-numbers";
+}
+
+
+/* DASHBOARD
+--------------------------------------------- */
+body.dashboard {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1;
+    color: $font;
+    background-color: $main-bg;
+    overflow-x: hidden;
+
+    @include scrollbar(10px);
+
+    @include media-md{
+        .page-title h3{
+            font-size: 30px;
+        }
+
+        &.lock .header__logo{
+            box-shadow: $shadow;
+
+            &:before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                box-shadow: $shadow;
+                z-index: 1;
+            }
+
+            &:after{
+                content: '';
+                position: absolute;
+                bottom: -15px;
+                left: -15px;
+                width: calc(100% + 30px);
+                height: 60px;
+                background-color: $white;
+                z-index: -1;
+            }
+        }
+    }
+
+    .main-content {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-self: stretch;
+        width: 100%;
+        min-height: 100%;
+        overflow: hidden;
+
+        &:after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0;
+            visibility: hidden;
+            transition: background-color 0.3s, opacity 0.3s;
+        }
+
+        &.lock:after{
+            opacity: 1;
+            visibility: visible;
+            z-index: 100;
+            background-color: rgba($styled-bg, 0.5);
+        }
+    }
+
+    .wrapper {
+        position: relative;
+        flex: 1 1 auto;
+        width: calc(100% - 420px);
+        padding: 60px 0;
+        min-height: 100%;
+
+        @include media-mdx{
+            width: calc(100% - 380px);
+        }
+
+        @include media-md{
+            width: 100%;
+            order: 2;
+        }
+    }
+
+    .container {
+        position: relative;
+        width: 100%;
+        max-width: 1400px;
+        padding: 0 15px;
+        margin: 0 auto;
+        z-index: 1;
+
+        @include media-lgx{
+            max-width: 870px;
+        }
+
+        @include media-lg{
+            max-width: 670px;
+        }
+
+        @include media-mdx{
+            max-width: 570px;
+        }
+
+        @include media-md{
+            max-width: none;
+        }
+
+        &.fluid{
+            max-width: none;
+            padding: 0 30px;
+        }
+    }
+
+    /* Blocks Import
+    --------------------------------------------- */
+    @import "db/header";
+
+    @import "db/bonus-shield";
+
+    @import "db/navigation";
+
+    @import "db/balance";
+
+    @import "db/statistics";
+
+    @import "db/deposit";
+
+    @import "db/deposit-archive";
+
+    @import "db/deposit-modals";
+
+    @import "db/db-graph";
+
+    @import "db/partners";
+
+    @import "db/referral-link";
+
+    @import "db/operations";
+
+    @import "db/security";
+
+    @import "db/settings";
+
+    @import "db/withdraw";
+
+    @import "db/referral";
+
+    @import "db/currency-exchange";
+}

@@ -1,0 +1,133 @@
+.fancybox__backdrop {
+    background: $overlay-bg;
+}
+
+.modal{
+    display: none;
+    position: relative;
+    width: 100%;
+    max-width: 650px;
+    background-color: $white;
+    padding: 60px 90px;
+    margin: 0;
+
+    @include media-sm{
+        padding: 60px 15px;
+    }
+
+    .carousel__button.is-close{
+        position: absolute;
+        top: -45px;
+        right: -45px;
+        width: auto;
+        height: auto;
+        color: $white;
+        transition: $transition;
+
+        @include media-sm{
+            right: 0;
+        }
+
+        &:hover{
+            opacity: 0.8;
+        }
+
+        svg{
+            width: 40px;
+            height: 40px;
+            stroke-width: 1;
+            filter: none;
+        }
+    }
+
+    &__icon{
+        position: relative;
+        text-align: center;
+
+        img{
+            width: 90px;
+        }
+    }
+
+    &__title{
+        position: relative;
+        text-align: center;
+    }
+
+    &__body{
+        position: relative;
+        text-align: center;
+    }
+
+    &__body-text{
+        position: relative;
+        text-align: center;
+        color: $font;
+
+        p{
+            line-height: 1.7;
+        }
+
+        a{
+            color: $primary;
+            text-decoration: underline;
+        }
+
+        .body-small{
+            max-width: 250px;
+            margin: 0 auto;
+        }
+    }
+
+    &__body-btn{
+        position: relative;
+
+        .btn{
+            width: 100%;
+            max-width: 300px;
+
+            &:focus{
+                outline: none !important;
+            }
+        }
+    }
+
+    &__body-link{
+        position: relative;
+
+        a{
+            color: $primary;
+            text-decoration: underline;
+            font-weight: 400;
+        }
+    }
+
+    &__body-form{
+        .form{
+            max-width: 380px;
+            margin: 0 auto;
+        }
+
+        .form-col{
+            padding: 0;
+        }
+
+        input{
+            box-shadow: $shadow !important;
+        }
+
+        label{
+            padding-bottom: 15px;
+        }
+
+        input:focus,
+        button:focus{
+            border: 0;
+            outline: none !important;
+        }
+
+        .btn{
+            margin-top: 15px;
+        }
+    }
+}

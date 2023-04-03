@@ -1,0 +1,306 @@
+.referral{
+    position: relative;
+
+    .referral-link{
+        margin-top: 50px;
+    }
+
+    &__stats{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 40px;
+        margin: 0 -25px;
+    }
+
+    &__stats-block{
+        position: relative;
+        width: 50%;
+        padding: 0 25px;
+        margin-top: 50px;
+
+        @include media-lgx{
+            width: 100%;
+        }
+    }
+
+    &__stats-totals,
+    &__stats-levels{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+        li{
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding: 10px 15px;
+            min-height: 80px;
+            background-color: $white;
+            box-shadow: $shadow;
+        }
+
+        li + li {
+            margin-top: 7px;
+        }
+
+        img{
+            width: 50px;
+        }
+
+        p{
+            display: flex;
+            flex-direction: column;
+            padding-left: 30px;
+            color: $font-dark;
+        }
+
+        b{
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .title-h4{
+            line-height: 1;
+            padding-top: 6px;
+        }
+    }
+
+    &__stats-levels{
+
+        li{
+            justify-content: space-between;
+            padding: 10px 30px;
+
+            @include media-xs{
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 10px 15px;
+            }
+        }
+
+        p{
+            padding: 0;
+
+            @include media-xs{
+                flex-direction: row;
+                align-items: center;
+                padding: 5px 0;
+                line-height: 1;
+            }
+        }
+
+        b{
+            color: $font;
+        }
+
+        .title-h4{
+            @include media-xs{
+                padding-top: 0;
+                padding-left: 15px;
+                line-height: 1;
+            }
+        }
+    }
+
+    &__stats-quick{
+        position: relative;
+        background-color: $white;
+        box-shadow: $shadow;
+        padding: 50px;
+
+        @include media-sm{
+            padding: 30px;
+        }
+    }
+
+    &__stats-quick-wrap{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 -15px;
+
+        @include media-sm{
+            flex-direction: column;
+        }
+
+        ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 0 15px;
+            color: $font-dark;
+        }
+
+        li{
+            display: flex;
+            align-items: center;
+        }
+
+        li + li{
+            margin-top: 55px;
+
+            @include media-sm{
+                margin-top: 30px;
+            }
+        }
+
+        .stats-quick--end{
+            @include media-sm{
+                margin-top: 30px;
+            }
+        }
+
+        img{
+            width: 50px;
+        }
+
+        p{
+            display: flex;
+            flex-direction: column;
+            padding-left: 20px;
+            color: $font-dark;
+        }
+
+        b{
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .title-giant{
+            line-height: 0;
+            padding-top: 10px;
+
+            @include media-sm{
+                padding: 35px 0 30px 0;
+            }
+        }
+
+        .title-h3{
+            font-size: 30px;
+            line-height: 1;
+        }
+
+        .title-h4{
+            line-height: 1;
+        }
+    }
+
+    &__tabs{
+        position: relative;
+        margin-top: 60px;
+
+        .tabs__nav{
+            display: flex;
+            align-items: center;
+
+            @include media-mdx{
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            h4{
+                margin-right: 30px;
+
+                @include media-mdx{
+                    margin-bottom: 20px;
+                }
+            }
+
+            a:not(.active){
+                background-color: $white;
+            }
+        }
+    }
+
+    &__table {
+        position: relative;
+        margin-top: 40px;
+
+        @include media-lgx{
+            overflow-x: auto;
+            @include scrollbar(6px);
+        }
+
+        table {
+            position: relative;
+            width: 100%;
+            table-layout: fixed;
+
+            @include media-lgx{
+                min-width: 1300px;
+            }
+
+            tbody tr{
+                cursor: pointer;
+            }
+
+            tr:hover > td{
+                background: $gradient;
+                color: $white;
+                transition: $transition;
+
+                a{
+                    color: $white;
+                }
+
+                .tx-primary{
+                    color: $white;
+                }
+            }
+
+            th{
+                height: 50px;
+                padding: 0 10px;
+                vertical-align: middle;
+                font-size: 14px;
+                font-weight: 600;
+                background-color: $card-bg;
+            }
+
+            td{
+                height: 60px;
+                vertical-align: middle;
+                padding: 5px 30px;
+                font-weight: 600;
+                font-size: 14px;
+                color: $font-dark;
+                background-color: $white;
+                border: 1px solid $main-bg;
+                transition: $transition;
+            }
+
+            .td--login {
+                font-size: 17px;
+            }
+
+            .td--date{
+                span{
+                    padding-left: 10px;
+                }
+            }
+
+            .td--email{
+                padding: 5px 25px;
+
+                a{
+                    font-size: 12px;
+                    color: $primary;
+                    text-decoration: underline;
+                    word-wrap: break-word;
+                    word-break: break-all;
+                }
+            }
+
+            .td--level{
+                font-size: 17px;
+                text-align: center;
+            }
+
+            .td--amount{
+                font-size: 25px;
+                font-weight: 300;
+            }
+        }
+    }
+}

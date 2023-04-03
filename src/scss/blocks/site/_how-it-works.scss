@@ -1,0 +1,157 @@
+.how-it-work {
+    position: relative;
+    width: 100%;
+    padding: 180px 0;
+    background-image: url("../images/animate/1.jpg");
+    background-repeat: no-repeat;
+    background-position: right 30px;
+
+    &.how-it-work--partners{
+        padding: 100px 0 140px 0;
+        background-color: $white;
+        background-image: url("../images/how/bg.png");
+        background-repeat: no-repeat;
+        background-position: center -30px;
+        z-index: 5;
+    }
+
+    @include media-md{
+        padding: 60px 0 0 0;
+    }
+
+    &__gear1{
+        position: absolute;
+        top: 220px;
+        right: 380px;
+        animation: 15s linear infinite rotate-invert;
+    }
+
+    &__gear2{
+        position: absolute;
+        top: 435px;
+        right: 160px;
+        animation: 10s linear infinite rotate;
+    }
+
+    &__gear3{
+        position: absolute;
+        top: 610px;
+        right: 540px;
+        animation: 12s linear infinite rotate-invert;
+    }
+
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes rotate-invert {
+        from {
+            transform: rotate(360deg);
+        }
+
+        to {
+            transform: rotate(0deg);
+        }
+    }
+
+    &__steps {
+        position: relative;
+
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -80px;
+        }
+
+        li{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 80px;
+            width: calc(100% / 3);
+            margin-top: 80px;
+            text-align: center;
+
+            @include media-md{
+                width: 100%;
+                margin-top: 60px;
+            }
+
+            &:before{
+                content: '';
+                position: absolute;
+                right: -55px;
+                bottom: 120px;
+                width: 111px;
+                height: 26px;
+                background-image: url("../images/how/str.png");
+                background-repeat: no-repeat;
+
+                @include media-md{
+                    display: none;
+                }
+            }
+
+            &:last-child:before{
+                display: none;
+            }
+        }
+    }
+
+    &__steps-number {
+
+        span{
+            font-size: 90px;
+
+            @include media-sm{
+                font-size: 50px;
+            }
+        }
+    }
+
+    &__steps-icon {
+        width: 80px;
+    }
+
+    &__steps-title {
+        position: relative;
+        color: $primary;
+        margin-top: 20px;
+    }
+
+    &__steps-text {
+        margin-top: 35px;
+    }
+
+    &__desc {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-top: 90px;
+        text-align: center;
+
+        p{
+            max-width: 600px;
+            line-height: 1.7;
+        }
+    }
+
+    &__btn {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-top: 70px;
+
+        .btn{
+            width: 100%;
+            max-width: 330px;
+        }
+    }
+}
